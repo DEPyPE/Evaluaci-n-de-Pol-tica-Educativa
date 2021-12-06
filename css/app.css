@@ -34,7 +34,7 @@ body{
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%) !important;
 }
 
-.img-banner-depype{
+.img-banner-epe{
     width: 100% !important;
 }
 
@@ -54,7 +54,7 @@ body{
     padding: 0 5% 0 5% !important;
 }
 
-.depype-img-banner-container{
+.epe-img-banner-container{
     margin: 3% 5% 0 5% !important;
 }
 
@@ -70,8 +70,8 @@ body{
     margin-bottom: 20px !important;
 }
 
-.card-depype-menu{
-    padding: 0 !important;
+.card-epe-menu{
+    padding: 15px 10px 15px 10px !important;
 }
 
 .tab-content-style{
@@ -81,32 +81,91 @@ body{
     border-right: 1px solid rgba(230, 230, 230, 1);
 }
 
-.depype-nav-flush{
+.epe-nav-flush{
     border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
 
-.depype-nav-item-inicio{
+.epe-nav-item-inicio{
     background-color: rgba(0, 123, 255, 1) !important;
     color: white !important;
     margin-right: 10px !important;
 }
 
-.depype-nav-item-inicio:hover{
+.epe-nav-item-inicio:hover{
     background-color: rgba(0, 123, 255, 0.7) !important;
     color: white !important;
-    margin-right: 10px !important;
 }
 
-.depype-nav-item{
+.epe-nav-item{
     background-color: rgba(255, 255, 255, 0.7);
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    font-size: 15px !important;
+    color: black;
 }
 
-.depype-nav-item:hover{
+.epe-nav-item:hover{
+    background-color: rgba(235, 235, 235, 0.4) !important;
+    color: black !important;
+}
+
+.epe-nav-item.active{
+    background-color: rgba(230, 230, 230, 1) !important;
+    border-left: 4px solid rgba(0, 123, 255, 1);
+    color: black !important;
+}
+
+.icon-menu-item{
+    float: right;
+    height: 50px !important;
+    padding: 10px 5px 5px 5px !important;
+    margin-top: -20px !important;
+    margin-left: 20px;
+}
+
+/* ESTILOS PARA EL MENU VERTICAL */
+
+.accordion-menu{
+    margin-top: 15px !important;
+}
+
+.card-menu-item{
+    border: 0 !important;
+    border-top: 1px solid rgba(230, 230, 230, 1);
+    height: auto;
+}
+
+.card-menu-item-header{
+    margin-bottom: 2px;
+    padding: 5px 5px 5px 5px !important;
+    
+    border-radius: 5px !important;
+    background-color: white !important;
+    overflow-x: hidden;
+}
+
+.card-menu-item-header:hover{
     background-color: rgba(0, 123, 255, 0.1) !important;
     color: #007bff !important;
+    cursor: pointer;
 }
 
-.depype-nav-item.active{
+.card-menu-item-header.active{
     background-color: #007bff !important;
-    color: white !important;
+    color: white;
+}
+
+.btn-link{
+    text-decoration: none !important;
+    font-size: 16px !important;
+}
+
+.icon-menu{
+    color: #007bff !important;
+    margin-top: 7px;
+    margin-right: 8px;    
+}
+
+.card-body-MenuNormativa, .card-body-EvaluacionEducativa, .card-body-ProgramasProyectos{
+    padding: 5px 0px 15px 22px !important;
 }

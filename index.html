@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -33,23 +34,123 @@
 
       <div class="col-md-1"> </div>
 
-      <div class="col-md-2">
+      <div class="col-md-3">
         <div class="card box-shadow-style">
-          <div class="card-body card-depype-menu card-body-style">
-            <div class="nav flex-column nav-pills depype-menu"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div class="card-body card-epe-menu card-body-style">
 
-              <a class="nav-link depype-nav-flush depype-nav-item active"  id="epe-inicio-tab"                    data-toggle="pill" href="#epe-inicio"                 role="tab" aria-controls="epe-inicio"                 aria-selected="true">Inicio</a>
-              <a class="nav-link depype-nav-flush depype-nav-item"         id="epe-normativa-tab"                 data-toggle="pill" href="#epe-normativa"              role="tab" aria-controls="epe-normativa"              aria-selected="false">Normativa</a>
-              <a class="nav-link depype-nav-flush depype-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false">Evaluación Educativa</a>
-              <a class="nav-link depype-nav-flush depype-nav-item"         id="epe-evaluacion-pyp-tab"            data-toggle="pill" href="#epe-evaluacion-pyp"         role="tab" aria-controls="epe-evaluacion-pyp"         aria-selected="false">Evaluación de Programas y Proyectos</a>
-              <a class="nav-link depype-nav-flush depype-nav-item"         id="epe-docente-pyp-tab"               data-toggle="pill" href="#epe-docente"                role="tab" aria-controls="epe-docente"                aria-selected="false">Docente</a>
-            
+            <div id="accordion accordion-menu">
+              <!-- Inicio -->
+              <div class="card card-menu-item">
+                <div class="card-header card-menu-item-header active" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Inicio
+                    </button>
+<!--                    <span class="material-icons float-right">expand_more</span> -->
+                  </h5>
+                </div>
+              </div>
+
+              <!-- Normativa -->
+              <div class="card card-menu-item">
+                <div class="card-header card-menu-item-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuNormativa" aria-expanded="false" aria-controls="collapseTwo">
+                      Normativa
+                    </button>
+                  </h5>
+                </div>
+                <div id="MenuNormativa" class="collapse collapse-normativa" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body card-body-MenuNormativa">
+
+                      <div class="nav flex-column nav-pills epe-menu epe-menu-normativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab"                    data-toggle="pill" href="#epe-inicio"                 role="tab" aria-controls="epe-inicio"                 aria-selected="true"> Normativa para la Evaluación Educativa <!--<span class="material-icons icon-menu-item">chevron_right</span>--> </a>
+                          <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-normativa-tab"                 data-toggle="pill" href="#epe-normativa"              role="tab" aria-controls="epe-normativa"              aria-selected="false"> Normativa para la Evaluación de Programas y Proyectos</a>
+                          <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Normativa Sección Docente</a>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Evaluación Educativa -->
+              <div class="card card-menu-item">
+                <div class="card-header card-menu-item-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuEvaluacionEducativa" aria-expanded="false" aria-controls="MenuEvaluacionEducativa">
+                      Evaluación Educativa
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="MenuEvaluacionEducativa" class="collapse collapse-EvaluacionEducativa" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body card-body-EvaluacionEducativa">
+                    
+                    <div class="nav flex-column nav-pills epe-menu epe-menu-EvaluacionEducativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab"                    data-toggle="pill" href="#epe-inicio"                 role="tab" aria-controls="epe-inicio"                 aria-selected="true"> Plan Nacionalpara la Evaluación de los Aprendizajes (PLANEA) </a>
+                      <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-normativa-tab"                 data-toggle="pill" href="#epe-normativa"              role="tab" aria-controls="epe-normativa"              aria-selected="false"> Programa para la Evaluación Internacional de los Estudiantes (PISA) </a>
+                      <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Evaluación de Condiciones Basicas para la Enseñanza y el Aprendizaje (ECEA)</a>
+                      <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Recopilación de Información para la Mejora del Aprendizaje (RIMA)</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Evaluación de Programas y Proyectos -->
+              <div class="card card-menu-item">
+                <div class="card-header card-menu-item-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuEvaluacionProgramasProyectos" aria-expanded="false" aria-controls="MenuEvaluacionProgramasProyectos">
+                        Evaluación de Programas y Proyectos
+                    </button>
+                  </h5>
+                </div>
+                <div id="MenuEvaluacionProgramasProyectos" class="collapse collapse-ProgramasProyectos" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body card-body-ProgramasProyectos">
+                    
+                    <div class="nav flex-column nav-pills epe-menu epe-menu-EvaluacionEducativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab"                    data-toggle="pill" href="#epe-inicio"                 role="tab" aria-controls="epe-inicio"                 aria-selected="true">  Programa Estatal de Evaluación y Mejora Educativa (PEEME) </a>
+                        <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-normativa-tab"                 data-toggle="pill" href="#epe-normativa"              role="tab" aria-controls="epe-normativa"              aria-selected="false"> Agenda Anual de Evaluación de Programas y Proyectos Educativos</a>
+                        <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Evaluación de Programas y Proyectos</a>
+                        <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Contraloría Social</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Docentes -->
+              <div class="card card-menu-item">
+                <div class="card-header card-menu-item-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuEvaluacionDocentes" aria-expanded="false" aria-controls="MenuEvaluacionDocentes">
+                        Docente
+                    </button>
+                  </h5>
+                </div>
+                <div id="MenuEvaluacionDocentes" class="collapse collapse-docentes" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    
+                    <div class="nav flex-column nav-pills epe-menu epe-menu-EvaluacionEducativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab"                    data-toggle="pill" href="#epe-inicio"                 role="tab" aria-controls="epe-inicio"                 aria-selected="true">  Valoración docente </a>
+                        <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-normativa-tab"                 data-toggle="pill" href="#epe-normativa"              role="tab" aria-controls="epe-normativa"              aria-selected="false"> Formación continua</a>
+                        <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Ideas para un retorno seguro</a>
+                        <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Evaluación General de Conocimientos</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
             </div>
+
           </div>
         </div>
       </div>
 
-      <div class="col-md-8">
+      <div class="col-md-7">
 
         <div class="row">
           <div class="col-md-12">
@@ -69,8 +170,8 @@
                   </div>
 
                   <!--
-                  <div class="depype-img-banner-container">
-                      <img class="img-banner-depype rounded-form box-shadow-style" src="https://www.seg.guanajuato.gob.mx/Investigadores/PublishingImages/general/Elementos%20sitios_banner%20resultados.png">
+                  <div class="epe-img-banner-container">
+                      <img class="img-banner-epe rounded-form box-shadow-style" src="https://www.seg.guanajuato.gob.mx/Investigadores/PublishingImages/general/Elementos%20sitios_banner%20resultados.png">
                   </div>
                   -->
                   
@@ -95,7 +196,7 @@
 
               <div class="tab-pane fade" id="epe-evaluacion_educativa" role="tabpanel" aria-labelledby="epe-evaluacion_educativa-tab">
 
-                <div id="depype-peeme" class="card box-shadow-style">
+                <div id="epe-peeme" class="card box-shadow-style">
                   <div class="card-body card-body-style">
                     <h3 class="card-title"> <strong> Evaluación Educativa </strong> </h3>
         
@@ -125,7 +226,7 @@
 
               <div class="tab-pane fade" id="epe-docente" role="tabpanel" aria-labelledby="epe-docente-tab">
 
-                <div id="depype-contraloria" class="card box-shadow-style">
+                <div id="epe-contraloria" class="card box-shadow-style">
                   <div class="card-body card-body-style">
                     <h4 class="card-title"> <strong> Docentes </strong> </h4>
         

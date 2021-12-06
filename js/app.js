@@ -1,24 +1,28 @@
 
     $(function(){
 //      $('.depype-menu .nav-item')[0].click();
-        
+        $('#headingOne').find('button').css('color', 'white');
     });
 
-    $('.depype-menu .nav-item').on('click', function(){
-        var type_context =  $(this).text();
+    $('.epe-menu-normativa .epe-nav-item').on('click', function(){
+        var type_context =  $(this);
         console.log( type_context );
 
-        if( type_context == "Inicio" ){
-            $(this).css('background-color', 'rgba(0, 123, 255, 1)');
-        }else if( type_context == "PEEME" ){
-            $(this).css('background-color', 'rgba(216, 112, 147, 1)');
-        }else if( type_context == "Agenda Anual de Evaluación" ){
-            
-        }else if( type_context == "Evaluación de Programas y Proyectos" ){
-            
-        }else if( type_context == "Contraloría Social" ){
-            
-        }
+        console.log('Item clicked');
+    });
+
+    $('.card-menu-item .card-menu-item-header').on('click', function(){
+//      Asignamos el color azul al item activo y cambiamos el color de letra a blanco
+        $(this).addClass('active');
+        $(this).children().find('button').css('color', 'white');
+
+//      Quitamos la clase 'active' a los items hermanos para quitar el color azul del elemento seleccionado anteriormente
+        $(this).parent().siblings().children().removeClass('active');
+        $(this).parent().siblings().children().find('button').css('color', '#007bff');
+        
+//      Mostrar las opciones del elemento seleccionado y ocultamos los elementos abiertos con anterioridad
+        $(this).siblings().collapse('toggle');
+        $(this).parent().siblings().children().collapse('hide');
     });
 
 /*
