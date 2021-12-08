@@ -71,7 +71,7 @@ body{
 }
 
 .card-epe-menu{
-    padding: 15px 10px 15px 10px !important;
+    padding: 15px 2px 12px 2px !important;
 }
 
 .tab-content-style{
@@ -115,14 +115,6 @@ body{
     color: black !important;
 }
 
-.icon-menu-item{
-    float: right;
-    height: 50px !important;
-    padding: 10px 5px 5px 5px !important;
-    margin-top: -20px !important;
-    margin-left: 20px;
-}
-
 /* ESTILOS PARA EL MENU VERTICAL */
 
 .accordion-menu{
@@ -152,7 +144,7 @@ body{
 
 .card-menu-item-header.active{
     background-color: #007bff !important;
-    color: white;
+    color: white !important;
 }
 
 .btn-link{
@@ -160,9 +152,13 @@ body{
     font-size: 16px !important;
 }
 
+.txt-title-menu{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
 .icon-menu{
-    color: #007bff !important;
-    margin-top: 7px;
+    color: #007bff;
     margin-right: 8px;    
 }
 

@@ -2,6 +2,7 @@
     $(function(){
 //      $('.depype-menu .nav-item')[0].click();
         $('#headingOne').find('button').css('color', 'white');
+        $('#headingOne').find('span').css('color', 'white');
     });
 
     $('.epe-menu-normativa .epe-nav-item').on('click', function(){
@@ -23,6 +24,37 @@
 //      Mostrar las opciones del elemento seleccionado y ocultamos los elementos abiertos con anterioridad
         $(this).siblings().collapse('toggle');
         $(this).parent().siblings().children().collapse('hide');
+
+//      Cambimos el color del icono a blanco
+        $(this).find('span').css('color', 'white');
+
+        var id_tab = 'epe-'+$(this).attr('typedept');
+        
+        console.log( $(this).parent().siblings().children().find('span').css('color', '#007bff') );
+
+        if( id_tab == "epe-inicio" ){
+            $( 'div#epe-inicio' ).show();
+            $( 'div#epe-normativa').hide();
+            $( 'div#epe-evaluacion-educativa').hide();
+            $( 'div#epe-evaluacion-pyp').hide();
+            $( 'div#epe-docente').hide();
+
+            console.log(' Inicio clicked ');
+        }else if( id_tab == "epe-normativa" ){
+            $( 'div#epe-inicio' ).hide();
+            $( 'div#epe-normativa').show();
+            $( 'div#epe-evaluacion-educativa').hide();
+            $( 'div#epe-evaluacion-pyp').hide();
+            $( 'div#epe-docente').hide();
+
+            console.log(' Normativa clicked ');
+        }
+
+//        $( 'div#'+id_tab ).siblings().hide();
+
+
+
+
     });
 
 /*

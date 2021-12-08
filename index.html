@@ -21,7 +21,7 @@
       <div class="col-md-1"></div>
       <div class="col-md-10">
 
-        <div class="banner-container rounded-form">
+        <div class="banner-container rounded-form box-shadow-style">
           <p class="text-evaluacion-educativa">Evaluación y <br> Política Educativa</p>
           <img class="img-banner" src="assets/images/banner1.png">
         </div>
@@ -41,22 +41,23 @@
             <div id="accordion accordion-menu">
               <!-- Inicio -->
               <div class="card card-menu-item">
-                <div class="card-header card-menu-item-header active" id="headingOne">
+                <div class="card-header card-menu-item-header active" id="headingOne" typedept="inicio">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Inicio
+                    <!-- class="tab-pane fade show active" id="epe-inicio" role="tabpanel" aria-labelledby="epe-inicio-tab" -->
+<!--                    <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab" data-toggle="pill" href="#epe-inicio" role="tab" aria-controls="epe-inicio" aria-selected="true"> Normativa para la Evaluación Educativa </a> -->
+                    <button class="btn btn-link" data-toggle="collapse" data-toggle="pill" href="#epe-inicio" role="tab" aria-controls="epe-inicio" >
+                        <p class="txt-title-menu">Inicio</p> <span class="material-icons float-left icon-menu">home_work</span>
                     </button>
-<!--                    <span class="material-icons float-right">expand_more</span> -->
                   </h5>
                 </div>
               </div>
 
               <!-- Normativa -->
               <div class="card card-menu-item">
-                <div class="card-header card-menu-item-header" id="headingTwo">
+                <div class="card-header card-menu-item-header" id="headingTwo" typedept="normativa">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuNormativa" aria-expanded="false" aria-controls="collapseTwo">
-                      Normativa
+                      <span class="material-icons float-left icon-menu">book</span> <p class="txt-title-menu">Normativa</p>
                     </button>
                   </h5>
                 </div>
@@ -64,9 +65,9 @@
                   <div class="card-body card-body-MenuNormativa">
 
                       <div class="nav flex-column nav-pills epe-menu epe-menu-normativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab"                    data-toggle="pill" href="#epe-inicio"                 role="tab" aria-controls="epe-inicio"                 aria-selected="true"> Normativa para la Evaluación Educativa <!--<span class="material-icons icon-menu-item">chevron_right</span>--> </a>
-                          <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-normativa-tab"                 data-toggle="pill" href="#epe-normativa"              role="tab" aria-controls="epe-normativa"              aria-selected="false"> Normativa para la Evaluación de Programas y Proyectos</a>
-                          <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Normativa Sección Docente</a>
+                          <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab"                    data-toggle="pill"    href="#epe-inicio"                 role="tab" aria-controls="epe-inicio"                 aria-selected="true"> Normativa para la Evaluación Educativa <!--<span class="material-icons icon-menu-item">chevron_right</span>--> </a>
+                          <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-normativa-tab"                 data-toggle="pill"    href="#epe-normativa"              role="tab" aria-controls="epe-normativa"              aria-selected="false"> Normativa para la Evaluación de Programas y Proyectos</a>
+                          <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill"    href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Normativa Sección Docente</a>
                       </div>
 
                   </div>
@@ -75,10 +76,10 @@
 
               <!-- Evaluación Educativa -->
               <div class="card card-menu-item">
-                <div class="card-header card-menu-item-header" id="headingThree">
+                <div class="card-header card-menu-item-header" id="headingThree" typedept="evaluacion-educativa">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuEvaluacionEducativa" aria-expanded="false" aria-controls="MenuEvaluacionEducativa">
-                      Evaluación Educativa
+                      <span class="material-icons float-left icon-menu">note_alt</span> <p class="txt-title-menu">Evaluación Educativa</p>
                     </button>
                   </h5>
                 </div>
@@ -99,11 +100,19 @@
 
               <!-- Evaluación de Programas y Proyectos -->
               <div class="card card-menu-item">
-                <div class="card-header card-menu-item-header" id="headingFour">
+                <div class="card-header card-menu-item-header" id="headingFour" typedept="evaluacion-pyp">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuEvaluacionProgramasProyectos" aria-expanded="false" aria-controls="MenuEvaluacionProgramasProyectos">
+                      <span class="material-icons float-left icon-menu">content_paste_search</span>
+                      <p class="txt-title-menu">
                         Evaluación de Programas y Proyectos
+                      </p>
                     </button>
+<!--
+                    <a      class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuEvaluacionProgramasProyectos" aria-expanded="false" aria-controls="MenuEvaluacionProgramasProyectos" role="button">
+                      <span class="material-icons float-left icon-menu">content_paste_search</span>
+                        Evaluación de Programas y Proyectos
+                    </a>-->
                   </h5>
                 </div>
                 <div id="MenuEvaluacionProgramasProyectos" class="collapse collapse-ProgramasProyectos" aria-labelledby="headingFour" data-parent="#accordion">
@@ -122,10 +131,10 @@
 
               <!-- Docentes -->
               <div class="card card-menu-item">
-                <div class="card-header card-menu-item-header" id="headingFive">
+                <div class="card-header card-menu-item-header" id="headingFive" typedept="docentes">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuEvaluacionDocentes" aria-expanded="false" aria-controls="MenuEvaluacionDocentes">
-                        Docente
+                      <span class="material-icons float-left icon-menu">school</span> <p class="txt-title-menu">Docente</p>
                     </button>
                   </h5>
                 </div>
@@ -157,7 +166,7 @@
 
             <div class="tab-content" id="v-pills-tabContent">
 
-              <div class="tab-pane fade show active" id="epe-inicio" role="tabpanel" aria-labelledby="epe-inicio-tab">
+              <div class="tab-pane fade show active" id="epe-inicio"                  aria-labelledby="epe-inicio-tab">
 
                 <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container ">
                   <div class="container-text">
@@ -179,7 +188,7 @@
 
               </div>
 
-              <div class="tab-pane fade" id="epe-normativa" role="tabpanel" aria-labelledby="epe-normativa-tab">
+              <div class="tab-pane fade"             id="epe-normativa"               aria-labelledby="epe-normativa-tab">
 
                 <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container ">
                   <div class="container-text">
@@ -194,7 +203,7 @@
 
               </div>
 
-              <div class="tab-pane fade" id="epe-evaluacion_educativa" role="tabpanel" aria-labelledby="epe-evaluacion_educativa-tab">
+              <div class="tab-pane fade"             id="epe-evaluacion-educativa"    aria-labelledby="epe-evaluacion_educativa-tab">
 
                 <div id="epe-peeme" class="card box-shadow-style">
                   <div class="card-body card-body-style">
@@ -210,7 +219,7 @@
 
               </div>
 
-              <div class="tab-pane fade" id="epe-evaluacion-pyp" role="tabpanel" aria-labelledby="epe-evaluacion-pyp-tab">
+              <div class="tab-pane fade"             id="epe-evaluacion-pyp"          aria-labelledby="epe-evaluacion-pyp-tab">
                 <div id="epe-evaluacion-pyp" class="card box-shadow-style">
                   <div class="card-body card-body-style">
                     <h4 class="card-title"> <strong> Evaluación de Programas y Proyectos </strong> </h4>
@@ -224,7 +233,7 @@
                 </div>
               </div>
 
-              <div class="tab-pane fade" id="epe-docente" role="tabpanel" aria-labelledby="epe-docente-tab">
+              <div class="tab-pane fade"             id="epe-docente"                aria-labelledby="epe-docente-tab">
 
                 <div id="epe-contraloria" class="card box-shadow-style">
                   <div class="card-body card-body-style">
