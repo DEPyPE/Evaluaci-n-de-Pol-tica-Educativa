@@ -34,20 +34,20 @@
 
       <div class="col-md-1"> </div>
 
-      <div class="col-md-3">
+      <div class="col-md-2 col-depe-menu">
         <div class="card box-shadow-style">
-          <div class="card-body card-epe-menu card-body-style">
+          <div class="card-body card-body-style">
 
             <div id="accordion accordion-menu">
               <!-- Inicio -->
               <div class="card card-menu-item">
                 <div class="card-header card-menu-item-header active" id="headingOne" typedept="inicio">
                   <h5 class="mb-0">
-                    <!-- class="tab-pane fade show active" id="epe-inicio" role="tabpanel" aria-labelledby="epe-inicio-tab" -->
-<!--                    <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab" data-toggle="pill" href="#epe-inicio" role="tab" aria-controls="epe-inicio" aria-selected="true"> Normativa para la Evaluación Educativa </a> -->
+
                     <button class="btn btn-link" data-toggle="collapse" data-toggle="pill" href="#epe-inicio" role="tab" aria-controls="epe-inicio" >
-                        <p class="txt-title-menu">Inicio</p> <span class="material-icons float-left icon-menu">home_work</span>
+                        <span class="material-icons float-left icon-menu">home_work</span> <p class="txt-title-menu">Inicio</p>
                     </button>
+                    
                   </h5>
                 </div>
               </div>
@@ -78,7 +78,7 @@
               <div class="card card-menu-item">
                 <div class="card-header card-menu-item-header" id="headingThree" typedept="programa-ee">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuEvaluacionProgramasProyectos" aria-expanded="false" aria-controls="MenuEvaluacionProgramasProyectos">
+                    <button class="btn btn-link collapsed btn-collapsable-item" data-toggle="collapse" data-target="#MenuProgramaEvaluacionEducativa" aria-expanded="false" aria-controls="MenuProgramaEvaluacionEducativa">
                       <span class="material-icons float-left icon-menu">assignment</span>
                       <p class="txt-title-menu">
                         Programa de Evaluación Educativa
@@ -86,11 +86,11 @@
                     </button>
                   </h5>
                 </div>
-                <div id="MenuEvaluacionProgramasProyectos" class="collapse collapse-ProgramasProyectos" aria-labelledby="headingFour" data-parent="#accordion">
-                  <div class="card-body card-body-ProgramasProyectos">
+                <div id="MenuProgramaEvaluacionEducativa" class="collapse collapse-ProgramaEvaluacionEducativa" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body card-body-ProgramaEvaluacionEducativa">
                     
-                    <div class="nav flex-column nav-pills epe-menu epe-menu-EvaluacionEducativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-pee-tab"                 data-toggle="pill" href="#epe-pee"              role="tab" aria-controls="epe-normativa"              aria-selected="false"> Agenda Anual de Evaluación de Programas y Proyectos Educativos</a>
+                    <div class="nav flex-column nav-pills epe-menu epe-menu-ProgramaEvaluacionEducativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link epe-nav-flush epe-nav-item active"         id="epe-pee-tab"                 data-toggle="pill" href="#epe-pee"              role="tab" aria-controls="epe-pee"              aria-selected="false"> Agenda Anual de Evaluación de Programas y Proyectos Educativos</a>
                     </div>
 
                   </div>
@@ -107,7 +107,7 @@
                   </h5>
                 </div>
 
-                <div id="MenuEvaluacionEducativa" class="collapse collapse-EvaluacionEducativa" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="MenuEvaluacionEducativa" class="collapse collapse-EvaluacionEducativa" aria-labelledby="headingFour" data-parent="#accordion">
                   <div class="card-body card-body-EvaluacionEducativa">
                     
                     <div class="nav flex-column nav-pills epe-menu epe-menu-EvaluacionEducativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -138,12 +138,11 @@
                     </a>-->
                   </h5>
                 </div>
-                <div id="MenuEvaluacionProgramasProyectos" class="collapse collapse-ProgramasProyectos" aria-labelledby="headingFour" data-parent="#accordion">
+                <div id="MenuEvaluacionProgramasProyectos" class="collapse collapse-ProgramasProyectos" aria-labelledby="headingFive" data-parent="#accordion">
                   <div class="card-body card-body-ProgramasProyectos">
                     
                     <div class="nav flex-column nav-pills epe-menu epe-menu-EvaluacionEducativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link epe-nav-flush epe-nav-item active"  id="epe-inicio-tab"                    data-toggle="pill" href="#epe-inicio"                 role="tab" aria-controls="epe-inicio"                 aria-selected="true">  Programa Estatal de Evaluación y Mejora Educativa (PEEME) </a>
-                        <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-normativa-tab"                 data-toggle="pill" href="#epe-normativa"              role="tab" aria-controls="epe-normativa"              aria-selected="false"> Agenda Anual de Evaluación de Programas y Proyectos Educativos</a>
                         <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Evaluación de Programas y Proyectos</a>
                         <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-evaluacion_educativa-tab"      data-toggle="pill" href="#epe-evaluacion_educativa"   role="tab" aria-controls="epe-evaluacion_educativa"   aria-selected="false"> Contraloría Social</a>
                     </div>
@@ -161,7 +160,7 @@
                     </button>
                   </h5>
                 </div>
-                <div id="MenuEvaluacionDocentes" class="collapse collapse-docentes" aria-labelledby="headingFive" data-parent="#accordion">
+                <div id="MenuEvaluacionDocentes" class="collapse collapse-docentes" aria-labelledby="headingSix" data-parent="#accordion">
                   <div class="card-body">
                     
                     <div class="nav flex-column nav-pills epe-menu epe-menu-EvaluacionEducativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -182,7 +181,7 @@
         </div>
       </div>
 
-      <div class="col-md-7">
+      <div class="col-md-8">
 
         <div class="row">
           <div class="col-md-12">

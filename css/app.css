@@ -62,16 +62,8 @@ body{
     text-align: justify !important;
 }
 
-.card-body-style{
-    margin: 3% 3% 5% 3% !important;
-}
-
 .card-title{
     margin-bottom: 20px !important;
-}
-
-.card-epe-menu{
-    padding: 15px 2px 12px 2px !important;
 }
 
 .tab-content-style{
@@ -115,6 +107,11 @@ body{
     color: black !important;
 }
 
+.card-body-style{
+    margin: 20px 10px 20px 10px !important;
+    padding: 0px !important;
+}
+
 /* ESTILOS PARA EL MENU VERTICAL */
 
 .accordion-menu{
@@ -129,39 +126,47 @@ body{
 
 .card-menu-item-header{
     margin-bottom: 2px;
-    padding: 5px 5px 5px 5px !important;
-    
-    border-radius: 5px !important;
+    padding: 5px 0px 5px 0px !important;
     background-color: white !important;
-    overflow-x: hidden;
 }
 
 .card-menu-item-header:hover{
     background-color: rgba(0, 123, 255, 0.1) !important;
     color: #007bff !important;
     cursor: pointer;
+    border-radius: 6px !important;
 }
 
 .card-menu-item-header.active{
     background-color: #007bff !important;
     color: white !important;
+    border-radius: 6px !important;
 }
 
 .btn-link{
     text-decoration: none !important;
     font-size: 16px !important;
+    white-space: normal !important;
+    text-align: left !important;
+    padding: 8px 11px 8px 8px !important;
 }
 
 .txt-title-menu{
-    display: inline-block;
-    margin-bottom: 0;
+    display: flex;
+    margin: 0 !important;
 }
 
 .icon-menu{
     color: #007bff;
-    margin-right: 8px;    
+    margin-right: 12px;
+    float: left;
+    font-size: 24px;
 }
 
 .card-body-MenuNormativa, .card-body-EvaluacionEducativa, .card-body-ProgramasProyectos{
     padding: 5px 0px 15px 22px !important;
+}
+
+.col-depe-menu{
+    padding-right: 2px !important;
 }
