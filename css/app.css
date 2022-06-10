@@ -103,7 +103,7 @@ body{
 
 .epe-nav-item.active{
     background-color: rgba(230, 230, 230, 1) !important;
-    border-left: 4px solid rgba(0, 123, 255, 1);
+    border-left: 4px solid rgba(0, 123, 255, 1) !important;
     color: black !important;
 }
 
@@ -113,6 +113,60 @@ body{
 }
 
 /* ESTILOS PARA EL MENU VERTICAL */
+
+.epe-menu-evaluacion-educativa.menu-evaluacion-educativa-active-item{
+    background-color: rgba(230, 230, 230, 1) !important;
+    border-left: 4px solid rgba(0, 123, 255, 1) !important;
+    color: black !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: rgba(230, 230, 230, 1) !important;
+    border-left: 4px solid rgba(0, 123, 255, 1) !important;
+    color: black !important;
+}
+
+.dropdown-evaluacion-educativa:hover{
+    cursor: pointer !important;
+}
+
+.dropdown-menu-depype{
+    left: 10px !important;
+    border-radius: 6px !important;
+    transform: translate3d(210px, -110px, 0px) !important;
+    border-left: 6px solid rgba(0, 123, 255, 1) !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.dropdown-menu-depype a{
+    border-radius: 8px !important;
+}
+
+.dropdown-menu-depype a:hover{
+    background-color: rgba(235, 235, 235, 0.8) !important;
+}
+
+.dropright .dropdown-toggle::after {
+    position: absolute;
+    right: 15px !important;
+    vertical-align: middle;
+    bottom: 45%;
+}
+.dropright .dropdown-toggle::after {
+    display: absolute !important;
+    width: 7px;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0.4em solid transparent;
+    border-bottom: 0.4em solid transparent;
+    border-left: 0.4em solid;
+    right: 0 !important;
+    z-index: 1000;
+}
+
 
 .accordion-menu{
     margin-top: 15px !important;
@@ -163,10 +217,34 @@ body{
     font-size: 24px;
 }
 
-.card-body-MenuNormativa, .card-body-EvaluacionEducativa, .card-body-ProgramasProyectos{
+.card-body-MenuDEPyPE, .card-body-EvaluacionEducativa, .card-body-ProgramasProyectos{
     padding: 5px 0px 15px 22px !important;
 }
 
 .col-depe-menu{
     padding-right: 2px !important;
+}
+
+/* SUBMENU PARA EL DEPyPE */
+
+.depype-page-container{
+    padding-top: 30px;
+    background-color: white;
+}
+
+.title-page-depype{
+    font-size: 38px;
+    font-family: 'Baloo 2';
+    font-weight: bold;
+}
+
+.nav-pills-submenu-depype{
+    flex-wrap: inherit !important;
+    align-items: center !important;
+    vertical-align: middle !important;
+}
+
+.depype-title-subprogram{
+    font-family: 'Baloo 2';
+    font-weight: bold;
 }

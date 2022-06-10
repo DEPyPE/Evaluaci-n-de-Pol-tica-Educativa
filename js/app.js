@@ -7,9 +7,6 @@
 
     $('.epe-menu-normativa .epe-nav-item').on('click', function(){
         var type_context =  $(this);
-        console.log( type_context );
-
-        console.log('Item clicked');
     });
 
     $('.card-menu-item .card-menu-item-header').on('click', function(){
@@ -31,6 +28,19 @@
 
         var id_tab = 'epe-'+$(this).attr('typedept');
 
+    });
+
+    $('#epe-inicio-tab').on('click', function(){
+        console.log( $('#epe-inicio-page') );
+    });
+    
+    $('.epe-menu-evaluacion-educativa').on('click', 'div a', function(){
+        $(this).addClass('.menu-evaluacion-educativa-active-item');
+        $(this).parent().siblings().find('.epe-nav-item').removeClass('.menu-evaluacion-educativa-active-item');
+    });
+
+    $('.dropdown-menu-dlae').on('click', 'dropdown-item', function(){
+        console.log( $(this) );
     });
 
 /*
