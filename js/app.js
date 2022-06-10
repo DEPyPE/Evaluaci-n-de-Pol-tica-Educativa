@@ -43,6 +43,16 @@
         console.log( $(this) );
     });
 
+    $('.dropdown-menu-depype-TEST').on('click', '.dropdown-item', function(){
+        console.log( 'Clicked => ', $(this).attr('name-program') );
+        $('#epe-inicio-page').removeClass('show');
+        $('#epe-inicio-page').removeClass('active');
+
+        $('#epe-depype-page').addClass('show');
+        $('#epe-depype-page').addClass('active');
+        $('#epe-depype-page').addClass('fade');
+    });
+
 /*
     $('.depype-menu .list-group-item').on('click', function(){
         $(this).addClass('active');

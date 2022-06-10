@@ -67,24 +67,26 @@
 
                       <div class="nav flex-column nav-pills epe-menu epe-menu-evaluacion-educativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
                           
+                          <!-- DEPYPE -->
                           <div class="dropdown dropright dropdown-evaluacion-educativa">
                             <a class="nav-link epe-nav-flush epe-nav-item dropdown-toggle dropdown-menu-depype-trigger" data-toggle="dropdown">
                               Departamento de Evaluación de Programas y Políticas Educativas <span class="oi oi-caret-right"></span>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-depype-TEST">
-                              <a class="dropdown-item" href="#PEEME">Programa Estatal de Evaluación <br> y Mejora Educativa (PEEME)</a>
+                              <a class="dropdown-item" name-program="peeme" href="#PEEME">Programa Estatal de Evaluación <br> y Mejora Educativa (PEEME)</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#AgendaAnual">Agenda Anual de Evaluación de <br> Programas y Proyectos Educativos</a>
+                              <a class="dropdown-item" name-program="agenda_anual" href="#AgendaAnual">Agenda Anual de Evaluación de <br> Programas y Proyectos Educativos</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#EvaluacionPyP">Evaluación de Programas y Proyectos</a>
+                              <a class="dropdown-item" name-program="evaluacion_p_y_p" href="#EvaluacionPyP">Evaluación de Programas y Proyectos</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#ContraloriaSocial">Contraloría Social</a>
+                              <a class="dropdown-item" name-program="contraloria_social" href="#ContraloriaSocial">Contraloría Social</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#Normativa">Normativa</a>
+                              <a class="dropdown-item" name-program="normativa" href="#Normativa">Normativa</a>
                             </div>
                           </div>
 
+                          <!-- Logística -->
                           <div class="dropdown dropright dropdown-evaluacion-educativa">
                             <a class="nav-link epe-nav-flush epe-nav-item dropdown-toggle dropdown-menu-depype-trigger" data-toggle="dropdown">
                               Departamento de Logística y Aplicación de Evaluaciones <span class="oi oi-caret-right"></span>
@@ -101,6 +103,7 @@
                             </div>
                           </div>
 
+                          <!-- Evaluación Enseñanza -->
                           <div class="dropdown dropright dropdown-evaluacion-educativa">
                             <a class="nav-link epe-nav-flush epe-nav-item dropdown-toggle dropdown-menu-depype-trigger" data-toggle="dropdown">
                               Departamento de Evaluación de la Práctica de la Enseñanza <span class="oi oi-caret-right"></span>
@@ -255,7 +258,7 @@
               </div>
 
               <!-- Departamento de Evaluación de Programas y Políticas Educativas -->
-              <div class="tab-pane fade" id="epe-depype-page" aria-labelledby="epe-depype-tab">
+              <div class="tab-pane" id="epe-depype-page" aria-labelledby="epe-depype-tab">
 
                 <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style depype-page-container ">
                   <div class="container-text">
