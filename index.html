@@ -22,7 +22,8 @@
       <div class="col-md-10">
 
         <div class="banner-container rounded-form box-shadow-style">
-          <p class="text-evaluacion-educativa">Evaluación y <br> Política Educativa</p>
+          <p class="title-page-evaluacion-educativa">Evaluación y <br> Política Educativa</p>
+          <!--<p class="title-page-evaluacion-educativa">Evaluación y Política Educativa</p>-->
           <img class="img-banner" src="assets/images/banner1.png">
         </div>
 
@@ -36,7 +37,8 @@
 
       <!-- MENU PRINCIPAL -->
       <div class="col-md-2 col-depe-menu">
-        <div class="card box-shadow-style">
+
+        <div class="card card-main-menu box-shadow-style rounded-form">
           <div class="card-body card-body-style">
 
             <div id="accordion accordion-menu">
@@ -67,7 +69,7 @@
 
                       <div class="nav flex-column nav-pills epe-menu epe-menu-evaluacion-educativa"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
                           
-                          <!-- DEPYPE -->
+                          <!-- Menu principal del DEPYPE -->
                           <div class="dropdown dropright dropdown-evaluacion-educativa">
                             <a class="nav-link epe-nav-flush epe-nav-item dropdown-toggle dropdown-menu-depype-trigger" data-toggle="dropdown">
                               Departamento de Evaluación de Programas y Políticas Educativas <span class="oi oi-caret-right"></span>
@@ -76,11 +78,11 @@
                             <div class="dropdown-menu dropdown-menu-depype-TEST">
                               <a class="dropdown-item" name-program="peeme" href="#PEEME">Programa Estatal de Evaluación <br> y Mejora Educativa (PEEME)</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" name-program="agenda_anual" href="#AgendaAnual">Agenda Anual de Evaluación de <br> Programas y Proyectos Educativos</a>
+                              <a class="dropdown-item" name-program="agenda-anual" href="#AgendaAnual">Agenda Anual de Evaluación de <br> Programas y Proyectos Educativos</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" name-program="evaluacion_p_y_p" href="#EvaluacionPyP">Evaluación de Programas y Proyectos</a>
+                              <a class="dropdown-item" name-program="evaluacion-p-y-p" href="#EvaluacionPyP">Evaluación de Programas y Proyectos</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" name-program="contraloria_social" href="#ContraloriaSocial">Contraloría Social</a>
+                              <a class="dropdown-item" name-program="contraloria-social" href="#ContraloriaSocial">Contraloría Social</a>
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" name-program="normativa" href="#Normativa">Normativa</a>
                             </div>
@@ -93,13 +95,13 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-logistica">
-                              <a class="dropdown-item " href="#">Evaluaciones Internacionales</a>
+                              <a class="dropdown-item" name-program="evaluaciones-internacionales" href="#">Evaluaciones Internacionales</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Evaluaciones Federales</a>
+                              <a class="dropdown-item" name-program="evaluaciones-federales" href="#">Evaluaciones Federales</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">EXUMS</a>
+                              <a class="dropdown-item" name-program="EXUMS" href="#">EXUMS</a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">RIMA</a>
+                              <a class="dropdown-item" name-program="RIMA" href="#">RIMA</a>
                             </div>
                           </div>
 
@@ -113,21 +115,6 @@
                               <a class="dropdown-item" href="#PEEME">Descripción y funciones</a>
                             </div>
                           </div>
-
-                          <!--
-                          <div class="dropdown dropright dropdown-evaluacion-educativa">
-                            <a class="nav-link epe-nav-flush epe-nav-item dropdown-toggle dropdown-menu-depype-trigger" data-toggle="dropdown">
-                              Docentes <span class="oi oi-caret-right"></span>
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-depype">
-                              <a class="dropdown-item" href="#PEEME">Opción 1</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#AgendaAnual">Opción 2</a>
-                              <div class="dropdown-divider"></div>
-                            </div>
-                          </div>
-                          -->
 
                           <!--
                           <div> <a class="nav-link epe-nav-flush epe-nav-item"         id="epe-logistica-tab"                           data-toggle="pill"    href="#epe-logistica-page"                      role="tab" aria-controls="epe-logistica"                        aria-selected="false"> Departamento de Logística y Aplicación de Evaluaciones </a></div>
@@ -224,496 +211,729 @@
           </div>
 
         </div>
+
       </div>
 
       <!-- SUB-PAGINAS DE CADA DEPARTAMENTO DE LA DGPE -->
       <div class="col-md-8">
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-content" id="v-pills-tabContent">
 
-              <!-- INICO -->
-              <div class="tab-pane fade show active" id="epe-inicio-page" role="tabpanel" aria-labelledby="epe-inicio-tab">
+          <!-- INICO -->
+          <div class="tab-pane show active" id="epe-inicio-page" role="tabpanel" aria-labelledby="epe-inicio-tab">
 
-                <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container active">
-                  <div class="container-text">
-                    <h1 class="display- ">Inicio</h1><br> 
-                    <p class="lead">
-                      Página de inicio de la DGPE: <br><br>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora in iste quam numquam ipsa eum inventore, exercitationem, laborum nisi dicta magni nam autem 
-                      nulla itaque cupiditate nihil placeat optio nemo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae accusantium eius quae. Ut nam ipsa maiores 
-                      dolor necessitatibus accusamus totam ab possimus commodi eligendi, ipsam mollitia dolore modi quis soluta.
-                    </p>
-                  </div>
-
-                  <!--
-                  <div class="epe-img-banner-container">
-                      <img class="img-banner-epe rounded-form box-shadow-style" src="https://www.seg.guanajuato.gob.mx/Investigadores/PublishingImages/general/Elementos%20sitios_banner%20resultados.png">
-                  </div>
-                  -->
-                  
-                </div>
-
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container active">
+              <div class="container-text">
+                <h1 class="display- ">Inicio</h1><br> 
+                <p class="lead">
+                  Página de inicio de la DGPE: <br><br>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora in iste quam numquam ipsa eum inventore, exercitationem, laborum nisi dicta magni nam autem 
+                  nulla itaque cupiditate nihil placeat optio nemo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae accusantium eius quae. Ut nam ipsa maiores 
+                  dolor necessitatibus accusamus totam ab possimus commodi eligendi, ipsam mollitia dolore modi quis soluta.
+                </p>
               </div>
 
-              <!-- Departamento de Evaluación de Programas y Políticas Educativas -->
-              <div class="tab-pane" id="epe-depype-page" aria-labelledby="epe-depype-tab">
-
-                <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style depype-page-container ">
-                  <div class="container-text">
-                    <!--<h3 class="title-page-depype"><strong>Departamento de Evaluación de Programas y Políticas Educativas (DEPyPE)</strong></h3><br>-->
-
-                    <!-- Menu -->
-                    <ul class="nav nav-pills nav-pills-submenu-depype" role="tablist">
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#PEEME">Programa Estatal de Evaluación y Mejora Educativa (PEEME)</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#AgendaAnual">Agenda Anual de Evaluación de Programas y Proyectos Educativos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#EvaluacionPyP">Evaluación de Programas y Proyectos</a>
-                      </li>
-                      <li class="nav-item">
-                         <a class="nav-link" data-toggle="pill" href="#ContraloriaSocial">Contraloría Social</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#Normativa">Normativa</a>
-                      </li>
-                    </ul>
-
-                    <!-- Cuerpo de cada sub-página -->
-                    <div class="tab-content">
-                      <div id="PEEME" class="container tab-pane active"><br>
-
-
-                        <h3 class="depype-title-subprogram"> <strong> Programa Estatal de Evaluación y Mejora Educativa (PEEME) </strong> </h3>
-          
-                        <p class="card-text">
-                            El presente Programa Estatal de Evaluación y Mejora Educativa (PEEME) del estado de Guanajuato se ha desarrollado en observación 
-                            del marco de acción establecido por el Instituto Nacional para la Evaluación de la Educación (INEE), con la finalidad de que los 
-                            resultados de las evaluaciones tengan un mayor impacto en la mejora educativa. Los PEEME son programas institucionales que establecen 
-                            propósitos, proyectos, acciones, metas de evaluación y mejora educativa en los tipos de educación básica y media superior. Su objetivo 
-                            central es apoyar a las entidades federativas para articular, visibilizar, facilitar la evaluación y el progreso educacional desde 
-                            el nivel local, con la intención de contribuir en la construcción de la Política Nacional de Evaluación de la Educación. El PEEME 
-                            de Guanajuato se constituye como el marco estatal de referencia para los procesos de evaluación mediante una visión estratégica y sistemática.
-                        </p>
-  
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#2017">2017</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#2019">2019</a>
-                          </li>
-                        </ul>
-  
-                        <!-- Tab panes -->
-                        <div class="tab-content tab-content-style">
-                          <div class="tab-pane container active" id="2017">
-                            
-                            <div class="list-group list-group-flush list-group-peeme">
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/GUIAS%20PEEME.zip" class="list-group-item list-group-item-action">Guías PEEME </a>
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/MODELO%20DE%20EVALUACI%C3%93N%20DE%20POL%C3%8DTICAS%20Y%20PROGRAMAS%20EDUCATIVOS.pdf" class="list-group-item list-group-item-action">MODELO DE EVALUACIÓN DE POLÍTICAS Y PROGRAMAS EDUCATIVOS</a>
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/PEEME%20Guanajuato.pdf" class="list-group-item list-group-item-action">PEEME Guanajuato</a>
-                            </div>
-  
-                          </div>
-                          <div class="tab-pane container fade" id="2019">
-  
-                            <div class="list-group list-group-flush list-group-peeme">
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/PROEME1_Evaluaci%C3%B3n%20QAC.zip" class="list-group-item list-group-item-action">PROEME1_Evaluación QAC</a>
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/PROEME2_MEVIMS.zip" class="list-group-item list-group-item-action">PROEME2_MEVIMS</a>
-                            </div>
-  
-                          </div>
-                        </div>
-
-
-                      </div>
-
-                      <div id="AgendaAnual" class="container tab-pane fade"><br>
-                        
-                        <h3 class="depype-title-subprogram"> <strong> Agenda Anual de Evaluación de Programas y Proyectos Educativos </strong> </h3>
-        
-                        <p class="card-text">
-                          La agenda anual de evaluación indica las evaluaciones y tipos de evaluaciones a las que estarán sujetos los programas 
-                          y proyectos educativos, lo anterior en cumplimiento a las Reglas de Operación(ROP) y Programas Anuales de Trabajo(PAT).
-                        </p>
-    
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tab2017">2017</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab2018">2018</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab2019">2019</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab2020">2020</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab2021">2021</a>
-                          </li>
-                        </ul>
-    
-                        <!-- Tab panes -->
-                        <div class="tab-content tab-content-style">
-                          
-                          <div class="tab-pane container active" id="tab2017">
-                            <div class="list-group list-group-flush list-group-peeme">
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2017/Agenda%20Ev.%20Prog.%20y%20Proy.%202017.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2017</a>
-                            </div>
-                          </div>
-                          <div class="tab-pane container fade" id="tab2018">
-                            <div class="list-group list-group-flush list-group-peeme">
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2018/Agenda%20Ev.%20Prog%20y%20Proy_2018.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2018</a>
-                            </div>
-                          </div>
-                          <div class="tab-pane container fade" id="tab2019">
-                            <div class="list-group list-group-flush list-group-peeme">
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2019/Agenda%20Ev.%20Prog.%20y%20Proy.%202019.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2019</a>
-                            </div>
-                          </div>
-                          <div class="tab-pane container fade" id="tab2020">
-                            <div class="list-group list-group-flush list-group-peeme">
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2020/Agenda%20Ev.%20Prog.%20y%20Proy.%202020.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2020</a>
-                            </div>
-                          </div>
-                          <div class="tab-pane container fade" id="tab2021">
-                            <div class="list-group list-group-flush list-group-peeme">
-                              <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2021/Agenda%20Ev.%20Prog.%20y%20Proy.%202021.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2021 </a>
-                            </div>
-                          </div>
-    
-                        </div>
-
-                      </div>
-
-                      <div id="EvaluacionPyP" class="container tab-pane fade"><br>
-                        
-                        <h4 class="depype-title-subprogram"> <strong> Evaluación de Programas y Proyectos </strong> </h4>
-        
-                        <p class="card-text">
-                            La Secretaría de Educación de Guanajuato a través de la Dirección de Evaluación de Logro y Procesos Educativos 
-                            de acuerdo a su Reglamento Interior, tiene por objetivo normar y coordinar la evaluación de las Políticas y 
-                            Programas Educativos, que se ejecutan en la entidad. La evaluación de los programas y proyectos y la política 
-                            educativa en general, es una herramienta fundamental para mejorar constantemente su desempeño y conocer cuáles 
-                            de las acciones son o no efectivas para resolver las grandes necesidades educativas. De acuerdo a lo anterior, 
-                            la Dirección General de Evaluación Educativa pone a su disposición el apartado Evaluación de Programas y Proyectos, 
-                            en el que publican los resultados de la evaluación de programas educativos y acciones de evaluación.
-                        </p>
-    
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#ProgEstatal">Programa Estatal</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ProgFederal">Programa Federal</a>
-                          </li>
-                        </ul>
-    
-                        <!-- Tab panes -->
-                        <div class="tab-content tab-content-style">
-                          
-                          <div class="tab-pane container active" id="ProgEstatal">
-    
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs">
-                              <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#ProgEstatalTab2020">2020</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ProgEstatalTab2019">2019</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ProgEstatalTab2017">2017</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#ProgEstatalTab2016">2016</a>
-                              </li>
-    
-                            </ul>
-    
-                            <!-- Tab panes -->
-                            <div class="tab-content tab-content-style">
-    
-                              <div class="tab-pane fade show active" id="ProgEstatalTab2020">
-                                <div class="list-group list-group-flush">
-                                  <a href="#" class="list-group-item list-group-item-action">Evaluacion_Procesos_y_Resultados_SEG_Q1162_Familias_Comprometidas</a>
-                                  <a href="#" class="list-group-item list-group-item-action">Evaluacion_Procesos_y_Resultados_SEG_Q3058_Horizonte_de_Oportunidades</a>
-                                  <a href="#" class="list-group-item list-group-item-action">Evaluacion_Procesos_y_Resultados_SEG_Q1404_Prepara_T</a>
-                                  <a href="#" class="list-group-item list-group-item-action">Anexo_III_Familias_Comprometidas</a>
-                                  <a href="#" class="list-group-item list-group-item-action">Anexo_III_Horizonte_de_Oportunidades</a>
-                                  <a href="#" class="list-group-item list-group-item-action">Anexo_III_Prepara_T_Componente_1</a>
-                                  <a href="#" class="list-group-item list-group-item-action">Anexo_III_Prepara_T_Componente_2_y_3</a>
-                                </div>
-                              </div>
-    
-                              <div class="tab-pane fade" id="ProgEstatalTab2019">
-                                <div class="list-group list-group-flush">
-                                  <a href="#" class="list-group-item list-group-item-action">Evaluación sobre Eficiencia y Articulación Organización</a>
-                                  <a href="#" class="list-group-item list-group-item-action">Diagnóstico de abandono escolar de EMS 2019</a>
-                                </div>
-                              </div>
-    
-                              <div class="tab-pane fade" id="ProgEstatalTab2017">
-                                <div class="list-group list-group-flush list-group-peeme">
-                                  <a href="#" class="list-group-item list-group-item-action">Evaluación de Procesos del MMFD-2017</a>
-                                  <a href="#" class="list-group-item list-group-item-action">EED_FISE_2017</a>
-                                </div>
-                              </div>
-    
-                              <div class="tab-pane fade" id="ProgEstatalTab2016">
-                                <div class="list-group list-group-flush list-group-peeme">
-                                  <a href="#" class="list-group-item list-group-item-action">Evaluación de la Pertinencia de la Propuesta Curricular Multigrado_2016</a>
-                                  <a href="#" class="list-group-item list-group-item-action">	Evaluaciones de Diseño PSE_Anexo 27_Ley de Egresos_2016</a>
-                                </div>
-                              </div>
-    
-                            </div>
-                            
-                          </div>
-    
-                          <div class="tab-pane container fade" id="ProgFederal">
-                            
-                              <!-- Nav tabs -->
-                              <ul class="nav nav-tabs">
-                                <li class="nav-item">
-                                  <a class="nav-link active" data-toggle="tab" href="#ProgFederalTab2020">2020</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" data-toggle="tab" href="#ProgFederalTab2019">2019</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" data-toggle="tab" href="#ProgFederalTab2018">2018</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" data-toggle="tab" href="#ProgFederalTab2017">2017</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" data-toggle="tab" href="#ProgFederalTab2016">2016</a>
-                                </li>
-                              </ul>
-    
-                              <!-- Tab panes -->
-                              <div class="tab-content tab-content-style">
-                                
-                                <div class="tab-pane container" id="ProgFederalTab2016">
-                                  <div class="list-group list-group-flush">
-                                    <a href="#" class="list-group-item list-group-item-action">Diagnóstico de los materiales del PNCE, Ciclo Escolar 2016-2017</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación Desempeño_PRE</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Habilidades sociales y emocionales PNCE 16-17</a>
-                                    <a href="#" class="list-group-item list-group-item-action">PETC_seguimiento_ASM_Prog Fed_Evaluados_16-17</a>
-                                    <a href="#" class="list-group-item list-group-item-action">PIIE_seguimiento_ASM_Prog Fed_Evaluados_16-17</a>
-                                    <a href="#" class="list-group-item list-group-item-action">PNCE_seguimiento_ASM_Prog Fed_Evaluados_16-17</a>
-                                    <a href="#" class="list-group-item list-group-item-action">PRE_seguimiento_ASM_Prog Fed_Evaluados_16-17</a>
-                                  </div>
-                                </div>
-                                <div class="tab-pane container fade" id="ProgFederalTab2017">
-                                  <div class="list-group list-group-flush">
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación de Desempeño_PNCE</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación de Impacto para el Fortalecimiento a la Gestión Escolar_PEC, 1er levantamiento y 2do. Levantamiento</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación Procesos_PETC</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Ficha de Monitoreo y Evaluación 2017_interna_PIEE 2017</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Ficha de Monitoreo y Evaluación 2017_interna_PNCE 2017</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Monitoreo sobre el Uso de Materiales y Proceso de Estrategia de Capacitación 2017 PNCE</a>
-                                  </div>
-                                </div>
-                                <div class="tab-pane container fade" id="ProgFederalTab2018">
-                                  <div class="list-group list-group-flush">
-                                    <a href="#" class="list-group-item list-group-item-action">3.D_Anexo1_CONAC- PETC</a>
-                                    <a href="#" class="list-group-item list-group-item-action">3.D_Anexo1_CONAC- PRE</a>
-                                    <a href="#" class="list-group-item list-group-item-action">3.D_Anexo1_CONAC- PRE 2018</a>
-                                    <a href="#" class="list-group-item list-group-item-action">3.D_Anexo1_CONAC-Desempeño PNCE</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Anexo 18 Formato CONAC PETC 2018</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Consistencia y Resultados_PETC 2018</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación de Materiales PRONI 2018</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación de Resultados PRE 2018</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación de Seguimiento del PNCE 2018</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluacion Diganostica PNCE 2018</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Guanajuato_Gral 3er levantamiento PEC 2018</a>
-                                  </div>
-                                </div>
-                                <div class="tab-pane container fade" id="ProgFederalTab2019">
-                                  <div class="list-group list-group-flush">
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación _PETC_2019</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación efectos_PRE 2019</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Reporte FISE 2017 final Junio de 2019	</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación para el monitoreo_ PNCE</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Posicionamiento_PEEI2019</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación procesos_PEEI 2019</a>
-                                  </div>
-                                </div>
-                                <div class="tab-pane container fade show active" id="ProgFederalTab2020">
-                                  <div class="list-group list-group-flush">
-                                    <a href="#" class="list-group-item list-group-item-action">Ficha de monitoreo y Evaluación PETC 2020 (interna)</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación Interna del PEEI_2020</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación Especifica PNCE 2020</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Diagnotico y Ficha de Evaluación DASEB_2020</a>
-                                    <a href="#" class="list-group-item list-group-item-action">Evaluación FAETA 2020</a>
-                                  </div>
-                                </div>
-    
-                              </div>
-    
-                          </div>
-    
-                        </div>
-                        
-                      </div>
-
-                      <div id="ContraloriaSocial" class="container tab-pane fade"><br>
-                        
-                        <h4 class="depype-title-subprogram"> <strong> Contraloría Social </strong> </h4>
-        
-                        <p class="card-text">
-                          La Dirección General de Evaluación Educativa en coordinación con la Secretaría de Transparencia y Rendición de Cuentas, 
-                          tienen como objetivo incorporar la figura de Contraloría Social en los programas sociales estatales y lograr su adecuada 
-                          operación. Para que de manera organizada, verifiquen el cumplimiento de las metas y la correcta aplicación de los recursos 
-                          públicos asignados a los programas de desarrollo social.
-                        </p>
-    
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#Contraloria2018">2016</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#Contraloria2017">2017</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#Contraloria2018">2018</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#Contraloria2019">2019</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#Contraloria2020">2020</a>
-                          </li>
-    
-                        </ul>
-    
-                        <!-- Tab panes -->
-                        <div class="tab-content tab-content-style">
-    
-                          <div class="tab-pane container fade" id="Contraloria2016">
-                            
-                            <div class="list-group list-group-flush">
-                              <a href="#" class="list-group-item list-group-item-action">Informe SEG 2016</a>
-                              <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora (Escuela de Familia)</a>
-                              <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora (Quédate, Aprende y Contuna)</a>
-                              <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora(Prepa para todos)</a>
-                            </div>
-    
-                          </div>
-                          <div class="tab-pane container fade" id="Contraloria2017">
-    
-                            <div class="list-group list-group-flush">
-                              <a href="#" class="list-group-item list-group-item-action">Informe SEG 2017</a>
-                              <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Escuela de Familia</a>
-                              <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Prepa Para Todos</a>
-                              <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Quedate Aprende y Continua</a>
-                            </div>
-    
-                          </div>
-    
-                          <div class="tab-pane container fade" id="Contraloria2018">
-    
-                            <div class="list-group list-group-flush">
-                              <a href="#" class="list-group-item list-group-item-action">Informe Final 2018 SEG</a>
-                              <a href="#" class="list-group-item list-group-item-action">Recomendaciones SEG 2018</a>
-                            </div>
-    
-                          </div>
-    
-                          <div class="tab-pane container fade" id="Contraloria2019">
-    
-                            <div class="list-group list-group-flush">
-                              <a href="#" class="list-group-item list-group-item-action">Informe 2019 Contraloria Social en Programas Sociales Estatales</a>
-                              <a href="#" class="list-group-item list-group-item-action">Informe SEG 2019</a>
-                            </div>
-    
-                          </div>
-    
-                          <div class="tab-pane container fade show active" id="Contraloria2020">
-    
-                            <div class="list-group list-group-flush">
-                              <a href="#" class="list-group-item list-group-item-action">Informe SEG 2020</a>
-                            </div>
-    
-                          </div>
-    
-                        </div>
-
-                      </div>
-
-                      <div id="Normativa" class="container tab-pane fade"><br>
-                        <h3>Normativa</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                      </div>
-
-                    </div>
-
-                    <nav class="nav nav-pills nav-fill">
-                      
-                      
-                      
-                      
-                      
-                    </nav>
-
-                  </div>
-                  
-                </div>
-
+              <!--
+              <div class="epe-img-banner-container">
+                  <img class="img-banner-epe rounded-form box-shadow-style" src="https://www.seg.guanajuato.gob.mx/Investigadores/PublishingImages/general/Elementos%20sitios_banner%20resultados.png">
               </div>
-
-              <!-- Departamento de Logística y Aplicación de Evaluaciones -->
-              <div class="tab-pane fade" id="epe-logistica-page" aria-labelledby="epe-logistica-tab">
-                <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container ">
-                  <div class="container-text">
-                    <h3 class="display- "><strong>Departamento de Logística y Aplicación de Evaluaciones</strong></h3><br>
-                    <p class="lead">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste in eum provident nulla aliquam tempore, necessitatibus molestiae, iusto iure debitis 
-                      commodi doloribus fuga incidunt? Nam deleniti vitae quibusdam perferendis!.
-                    </p>
-                  </div>
-                  
-                </div>
-
+              -->
               
-              </div>
-              
-              <!-- Departamento de Evaluación de la Práctica de la Enseñanza -->
-              <div class="tab-pane fade" id="epe-evaluacion-practica-enseñanza-page" aria-labelledby="epe-evaluacion-practica-enseñanza-tab">
-                <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container ">
-                  <div class="container-text">
-                    <h3 class="display- "><strong>Departamento de Evaluación de la Práctica de la Enseñanza</strong></h3><br>
-                    <p class="lead">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste in eum provident nulla aliquam tempore, necessitatibus molestiae, iusto iure debitis 
-                      commodi doloribus fuga incidunt? Nam deleniti vitae quibusdam perferendis!.
-                    </p>
-                  </div>
-                  
-                </div>
-              </div>
-
             </div>
 
           </div>
+
+          <!-- Departamento de Evaluación de Programas y Políticas Educativas -->
+          <div class="tab-pane" id="epe-depype-page">
+
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style depype-page-container ">
+              <div class="container-text">
+                <!--<h3 class="title-page-depype"><strong>Departamento de Evaluación de Programas y Políticas Educativas (DEPyPE)</strong></h3><br>-->
+
+                <!-- Menu -->
+                <ul class="nav nav-pills nav-pills-submenu-depype" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#PEEME">Programa Estatal de Evaluación y Mejora Educativa (PEEME)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#AgendaAnual">Agenda Anual de Evaluación de Programas y Proyectos Educativos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#EvaluacionPyP">Evaluación de Programas y Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" data-toggle="pill" href="#ContraloriaSocial">Contraloría Social</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#Normativa">Normativa</a>
+                  </li>
+                </ul>
+
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="tab-pane" id="epe-depype-peeme">
+
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style depype-page-container">
+              <div class="container-text">
+
+                <a class="depype-peeme-title"> Programa Estatal de Evaluación y Mejora Educativa (PEEME) </a><br><br>
+      
+                <p class="card-text">
+                    El presente Programa Estatal de Evaluación y Mejora Educativa (PEEME) del estado de Guanajuato se ha desarrollado en observación 
+                    del marco de acción establecido por el Instituto Nacional para la Evaluación de la Educación (INEE), con la finalidad de que los 
+                    resultados de las evaluaciones tengan un mayor impacto en la mejora educativa. Los PEEME son programas institucionales que establecen 
+                    propósitos, proyectos, acciones, metas de evaluación y mejora educativa en los tipos de educación básica y media superior. Su objetivo 
+                    central es apoyar a las entidades federativas para articular, visibilizar, facilitar la evaluación y el progreso educacional desde 
+                    el nivel local, con la intención de contribuir en la construcción de la Política Nacional de Evaluación de la Educación. El PEEME 
+                    de Guanajuato se constituye como el marco estatal de referencia para los procesos de evaluación mediante una visión estratégica y sistemática.
+                </p>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#2017">2017</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#2019">2019</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content tab-content-style">
+                  <div class="tab-pane container active" id="2017">
+                    
+                    <div class="list-group list-group-flush list-group-peeme">
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/GUIAS%20PEEME.zip" class="list-group-item list-group-item-action">Guías PEEME </a>
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/MODELO%20DE%20EVALUACI%C3%93N%20DE%20POL%C3%8DTICAS%20Y%20PROGRAMAS%20EDUCATIVOS.pdf" class="list-group-item list-group-item-action">MODELO DE EVALUACIÓN DE POLÍTICAS Y PROGRAMAS EDUCATIVOS</a>
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/PEEME%20Guanajuato.pdf" class="list-group-item list-group-item-action">PEEME Guanajuato</a>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane container fade" id="2019">
+
+                    <div class="list-group list-group-flush list-group-peeme">
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/PROEME1_Evaluaci%C3%B3n%20QAC.zip" class="list-group-item list-group-item-action">PROEME1_Evaluación QAC</a>
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/PEEME/PROEME2_MEVIMS.zip" class="list-group-item list-group-item-action">PROEME2_MEVIMS</a>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="tab-pane" id="epe-depype-agenda-anual">
+
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style depype-page-container">
+
+              <div class="container-text">
+
+                <h3 class="depype-title-subprogram"> <strong> Agenda Anual de Evaluación de Programas y Proyectos Educativos </strong> </h3><br>
+      
+                <p class="card-text">
+                  La agenda anual de evaluación indica las evaluaciones y tipos de evaluaciones a las que estarán sujetos los programas 
+                  y proyectos educativos, lo anterior en cumplimiento a las Reglas de Operación(ROP) y Programas Anuales de Trabajo(PAT).
+                </p> <br>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tab2017">2017</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab2018">2018</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab2019">2019</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab2020">2020</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#tab2021">2021</a>
+                  </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content tab-content-style">
+                  
+                  <div class="tab-pane container active" id="tab2017">
+                    <div class="list-group list-group-flush list-group-peeme">
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2017/Agenda%20Ev.%20Prog.%20y%20Proy.%202017.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2017</a>
+                    </div>
+                  </div>
+                  <div class="tab-pane container fade" id="tab2018">
+                    <div class="list-group list-group-flush list-group-peeme">
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2018/Agenda%20Ev.%20Prog%20y%20Proy_2018.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2018</a>
+                    </div>
+                  </div>
+                  <div class="tab-pane container fade" id="tab2019">
+                    <div class="list-group list-group-flush list-group-peeme">
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2019/Agenda%20Ev.%20Prog.%20y%20Proy.%202019.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2019</a>
+                    </div>
+                  </div>
+                  <div class="tab-pane container fade" id="tab2020">
+                    <div class="list-group list-group-flush list-group-peeme">
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2020/Agenda%20Ev.%20Prog.%20y%20Proy.%202020.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2020</a>
+                    </div>
+                  </div>
+                  <div class="tab-pane container fade" id="tab2021">
+                    <div class="list-group list-group-flush list-group-peeme">
+                      <a href="https://www.seg.guanajuato.gob.mx/Investigadores/Documents/Agenda%20Anual%20De%20Evaluaci%C3%B3n/2021/Agenda%20Ev.%20Prog.%20y%20Proy.%202021.pdf" class="list-group-item list-group-item-action">Agenda Ev. Prog. y Proy. 2021 </a>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- _________________________________________________ -->
+              
+            </div>
+
+          </div>
+
+          <div class="tab-pane" id="epe-depype-evaluacion_p_y_p">
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style depype-page-container">
+              <div class="container-text">
+
+                  <h4 class="depype-title-subprogram"> <strong> Evaluación de Programas y Proyectos </strong> </h4>
+  
+                  <p class="card-text">
+                      La Secretaría de Educación de Guanajuato a través de la Dirección de Evaluación de Logro y Procesos Educativos 
+                      de acuerdo a su Reglamento Interior, tiene por objetivo normar y coordinar la evaluación de las Políticas y 
+                      Programas Educativos, que se ejecutan en la entidad. La evaluación de los programas y proyectos y la política 
+                      educativa en general, es una herramienta fundamental para mejorar constantemente su desempeño y conocer cuáles 
+                      de las acciones son o no efectivas para resolver las grandes necesidades educativas. De acuerdo a lo anterior, 
+                      la Dirección General de Evaluación Educativa pone a su disposición el apartado Evaluación de Programas y Proyectos, 
+                      en el que publican los resultados de la evaluación de programas educativos y acciones de evaluación.
+                  </p>
+
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#ProgEstatal">Programa Estatal</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#ProgFederal">Programa Federal</a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content tab-content-style">
+                    
+                    <div class="tab-pane container active" id="ProgEstatal">
+
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#ProgEstatalTab2020">2020</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#ProgEstatalTab2019">2019</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#ProgEstatalTab2017">2017</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#ProgEstatalTab2016">2016</a>
+                        </li>
+
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content tab-content-style">
+
+                        <div class="tab-pane fade show active" id="ProgEstatalTab2020">
+                          <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">Evaluacion_Procesos_y_Resultados_SEG_Q1162_Familias_Comprometidas</a>
+                            <a href="#" class="list-group-item list-group-item-action">Evaluacion_Procesos_y_Resultados_SEG_Q3058_Horizonte_de_Oportunidades</a>
+                            <a href="#" class="list-group-item list-group-item-action">Evaluacion_Procesos_y_Resultados_SEG_Q1404_Prepara_T</a>
+                            <a href="#" class="list-group-item list-group-item-action">Anexo_III_Familias_Comprometidas</a>
+                            <a href="#" class="list-group-item list-group-item-action">Anexo_III_Horizonte_de_Oportunidades</a>
+                            <a href="#" class="list-group-item list-group-item-action">Anexo_III_Prepara_T_Componente_1</a>
+                            <a href="#" class="list-group-item list-group-item-action">Anexo_III_Prepara_T_Componente_2_y_3</a>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="ProgEstatalTab2019">
+                          <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action">Evaluación sobre Eficiencia y Articulación Organización</a>
+                            <a href="#" class="list-group-item list-group-item-action">Diagnóstico de abandono escolar de EMS 2019</a>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="ProgEstatalTab2017">
+                          <div class="list-group list-group-flush list-group-peeme">
+                            <a href="#" class="list-group-item list-group-item-action">Evaluación de Procesos del MMFD-2017</a>
+                            <a href="#" class="list-group-item list-group-item-action">EED_FISE_2017</a>
+                          </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="ProgEstatalTab2016">
+                          <div class="list-group list-group-flush list-group-peeme">
+                            <a href="#" class="list-group-item list-group-item-action">Evaluación de la Pertinencia de la Propuesta Curricular Multigrado_2016</a>
+                            <a href="#" class="list-group-item list-group-item-action">	Evaluaciones de Diseño PSE_Anexo 27_Ley de Egresos_2016</a>
+                          </div>
+                        </div>
+
+                      </div>
+                      
+                    </div>
+
+                    <div class="tab-pane container fade" id="ProgFederal">
+                      
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#ProgFederalTab2020">2020</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ProgFederalTab2019">2019</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ProgFederalTab2018">2018</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ProgFederalTab2017">2017</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#ProgFederalTab2016">2016</a>
+                          </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content tab-content-style">
+                          
+                          <div class="tab-pane container" id="ProgFederalTab2016">
+                            <div class="list-group list-group-flush">
+                              <a href="#" class="list-group-item list-group-item-action">Diagnóstico de los materiales del PNCE, Ciclo Escolar 2016-2017</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación Desempeño_PRE</a>
+                              <a href="#" class="list-group-item list-group-item-action">Habilidades sociales y emocionales PNCE 16-17</a>
+                              <a href="#" class="list-group-item list-group-item-action">PETC_seguimiento_ASM_Prog Fed_Evaluados_16-17</a>
+                              <a href="#" class="list-group-item list-group-item-action">PIIE_seguimiento_ASM_Prog Fed_Evaluados_16-17</a>
+                              <a href="#" class="list-group-item list-group-item-action">PNCE_seguimiento_ASM_Prog Fed_Evaluados_16-17</a>
+                              <a href="#" class="list-group-item list-group-item-action">PRE_seguimiento_ASM_Prog Fed_Evaluados_16-17</a>
+                            </div>
+                          </div>
+                          <div class="tab-pane container fade" id="ProgFederalTab2017">
+                            <div class="list-group list-group-flush">
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación de Desempeño_PNCE</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación de Impacto para el Fortalecimiento a la Gestión Escolar_PEC, 1er levantamiento y 2do. Levantamiento</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación Procesos_PETC</a>
+                              <a href="#" class="list-group-item list-group-item-action">Ficha de Monitoreo y Evaluación 2017_interna_PIEE 2017</a>
+                              <a href="#" class="list-group-item list-group-item-action">Ficha de Monitoreo y Evaluación 2017_interna_PNCE 2017</a>
+                              <a href="#" class="list-group-item list-group-item-action">Monitoreo sobre el Uso de Materiales y Proceso de Estrategia de Capacitación 2017 PNCE</a>
+                            </div>
+                          </div>
+                          <div class="tab-pane container fade" id="ProgFederalTab2018">
+                            <div class="list-group list-group-flush">
+                              <a href="#" class="list-group-item list-group-item-action">3.D_Anexo1_CONAC- PETC</a>
+                              <a href="#" class="list-group-item list-group-item-action">3.D_Anexo1_CONAC- PRE</a>
+                              <a href="#" class="list-group-item list-group-item-action">3.D_Anexo1_CONAC- PRE 2018</a>
+                              <a href="#" class="list-group-item list-group-item-action">3.D_Anexo1_CONAC-Desempeño PNCE</a>
+                              <a href="#" class="list-group-item list-group-item-action">Anexo 18 Formato CONAC PETC 2018</a>
+                              <a href="#" class="list-group-item list-group-item-action">Consistencia y Resultados_PETC 2018</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación de Materiales PRONI 2018</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación de Resultados PRE 2018</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación de Seguimiento del PNCE 2018</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluacion Diganostica PNCE 2018</a>
+                              <a href="#" class="list-group-item list-group-item-action">Guanajuato_Gral 3er levantamiento PEC 2018</a>
+                            </div>
+                          </div>
+                          <div class="tab-pane container fade" id="ProgFederalTab2019">
+                            <div class="list-group list-group-flush">
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación _PETC_2019</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación efectos_PRE 2019</a>
+                              <a href="#" class="list-group-item list-group-item-action">Reporte FISE 2017 final Junio de 2019	</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación para el monitoreo_ PNCE</a>
+                              <a href="#" class="list-group-item list-group-item-action">Posicionamiento_PEEI2019</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación procesos_PEEI 2019</a>
+                            </div>
+                          </div>
+                          <div class="tab-pane container fade show active" id="ProgFederalTab2020">
+                            <div class="list-group list-group-flush">
+                              <a href="#" class="list-group-item list-group-item-action">Ficha de monitoreo y Evaluación PETC 2020 (interna)</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación Interna del PEEI_2020</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación Especifica PNCE 2020</a>
+                              <a href="#" class="list-group-item list-group-item-action">Diagnotico y Ficha de Evaluación DASEB_2020</a>
+                              <a href="#" class="list-group-item list-group-item-action">Evaluación FAETA 2020</a>
+                            </div>
+                          </div>
+
+                        </div>
+
+                    </div>
+
+                  </div>
+
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="tab-pane" id="epe-depype-contraloria-social">
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style depype-page-container">
+
+              <div class="container-text">
+                
+                <h4 class="depype-title-subprogram"> <strong> Contraloría Social </strong> </h4>
+    
+                <p class="card-text">
+                  La Dirección General de Evaluación Educativa en coordinación con la Secretaría de Transparencia y Rendición de Cuentas, 
+                  tienen como objetivo incorporar la figura de Contraloría Social en los programas sociales estatales y lograr su adecuada 
+                  operación. Para que de manera organizada, verifiquen el cumplimiento de las metas y la correcta aplicación de los recursos 
+                  públicos asignados a los programas de desarrollo social.
+                </p>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Contraloria2018">2016</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Contraloria2017">2017</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Contraloria2018">2018</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Contraloria2019">2019</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#Contraloria2020">2020</a>
+                  </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content tab-content-style">
+
+                  <div class="tab-pane container fade" id="Contraloria2016">
+                    
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe SEG 2016</a>
+                      <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora (Escuela de Familia)</a>
+                      <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora (Quédate, Aprende y Contuna)</a>
+                      <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora(Prepa para todos)</a>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane container fade" id="Contraloria2017">
+
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe SEG 2017</a>
+                      <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Escuela de Familia</a>
+                      <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Prepa Para Todos</a>
+                      <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Quedate Aprende y Continua</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane container fade" id="Contraloria2018">
+
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe Final 2018 SEG</a>
+                      <a href="#" class="list-group-item list-group-item-action">Recomendaciones SEG 2018</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane container fade" id="Contraloria2019">
+
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe 2019 Contraloria Social en Programas Sociales Estatales</a>
+                      <a href="#" class="list-group-item list-group-item-action">Informe SEG 2019</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane container fade show active" id="Contraloria2020">
+
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe SEG 2020</a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="tab-pane" id="epe-depype-contraloria-social">
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style depype-page-container">
+
+              <div class="container-text">
+                
+                <h4 class="depype-title-subprogram"> <strong> Contraloría Social </strong> </h4>
+    
+                <p class="card-text">
+                  La Dirección General de Evaluación Educativa en coordinación con la Secretaría de Transparencia y Rendición de Cuentas, 
+                  tienen como objetivo incorporar la figura de Contraloría Social en los programas sociales estatales y lograr su adecuada 
+                  operación. Para que de manera organizada, verifiquen el cumplimiento de las metas y la correcta aplicación de los recursos 
+                  públicos asignados a los programas de desarrollo social.
+                </p>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Contraloria2018">2016</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Contraloria2017">2017</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Contraloria2018">2018</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Contraloria2019">2019</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#Contraloria2020">2020</a>
+                  </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content tab-content-style">
+
+                  <div class="tab-pane container fade" id="Contraloria2016">
+                    
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe SEG 2016</a>
+                      <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora (Escuela de Familia)</a>
+                      <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora (Quédate, Aprende y Contuna)</a>
+                      <a href="#" class="list-group-item list-group-item-action">Propuesta Plan de Mejora(Prepa para todos)</a>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane container fade" id="Contraloria2017">
+
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe SEG 2017</a>
+                      <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Escuela de Familia</a>
+                      <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Prepa Para Todos</a>
+                      <a href="#" class="list-group-item list-group-item-action">Plan de Mejora Quedate Aprende y Continua</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane container fade" id="Contraloria2018">
+
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe Final 2018 SEG</a>
+                      <a href="#" class="list-group-item list-group-item-action">Recomendaciones SEG 2018</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane container fade" id="Contraloria2019">
+
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe 2019 Contraloria Social en Programas Sociales Estatales</a>
+                      <a href="#" class="list-group-item list-group-item-action">Informe SEG 2019</a>
+                    </div>
+
+                  </div>
+
+                  <div class="tab-pane container fade show active" id="Contraloria2020">
+
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action">Informe SEG 2020</a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Departamento de Logística y Aplicación de Evaluaciones -->
+          <div class="tab-pane" id="epe-logistica-evaluaciones-internacionales" aria-labelledby="epe-logistica-tab">
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container evaluaciones-internacionales-container">
+              <div class="container-text">
+
+                <h3 class="display- "><strong>Evaluaciones Internacionales</strong></h3><br>
+                <p class="lead">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste in eum provident nulla aliquam tempore, necessitatibus molestiae, iusto iure debitis 
+                  commodi doloribus fuga incidunt? Nam deleniti vitae quibusdam perferendis!.
+                </p> <br>
+
+                <div class="row">
+                  <div class="col-lg-1"></div>
+
+                  <div class="col-lg-10">
+
+                    <div class="card-deck">
+
+                      <div class="card card-evaluaciones-internacionales rounded-form-25 text-center">
+    
+                        <div class="card-image-container-pisa">
+                          <img class="card-img card-img-evaluacion-internacional" src="https://historico.mejoredu.gob.mx/wp-content/uploads/2019/01/Untitled-3.png" alt="Suresh Dasari Card">
+                        </div>
+      
+                        <div class="card-body card-body-evaluaciones-internacionales">
+                            <p class="card-text">El propósito de su aplicación es dar cuenta de las competencias que han desarrollado los jóvenes estudiantes de 15 años en áreas como Lectura,
+                               Matemáticas y Ciencias, necesarias para su plena participación en la sociedad actual.
+                            </p>
+                        </div>
+  
+                        <a href="" class="btn btn-primary btn-info-pisa rounded-form-25">Ver información oficial</a>
+  
+                      </div>
+  
+                      <div class="card card-evaluaciones-internacionales rounded-form-25 text-center">
+  
+                        <div class="card-image-container-talis">
+                          <img class="card-img card-img-evaluacion-internacional" src="https://historico.mejoredu.gob.mx/wp-content/uploads/2019/05/talis-logo_.png" alt="Suresh Dasari Card">
+                        </div>
+      
+                        <div class="card-body card-body-evaluaciones-internacionales">
+                            <p class="card-text">Es un estudio cuyo propósito se centra en conocer las condiciones de trabajo de los docentes y el ambiente de aprendizaje de los centros escolares.</p>
+                        </div><br>
+  
+                        <a href="" class="btn btn-primary btn-info-talis rounded-form-25">Ver información oficial</a>
+  
+                      </div>
+  
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-lg-1"></div>
+                </div>
+
+              </div>
+              
+            </div>
+
+          
+          </div>
+
+          <div class="tab-pane" id="epe-logistica-evaluaciones-nacionales" aria-labelledby="epe-logistica-tab">
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container ">
+              <div class="container-text">
+                <h3 class=""><strong>Evaluaciones Nacionales</strong></h3><br>
+                <p class="lead">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste in eum provident nulla aliquam tempore, necessitatibus molestiae, iusto iure debitis 
+                  commodi doloribus fuga incidunt? Nam deleniti vitae quibusdam perferendis!.
+                </p> <br>
+
+                <div class="row">
+                  <div class="col-lg-1"></div>
+
+                  <div class="col-lg-10">
+
+                    <div class="card-deck">
+
+                      <div class="card card-evaluaciones-internacionales rounded-form-25 text-center">
+    
+                        <div class="card-image-container-planea-basica">
+                          <img class="card-img card-img-evaluacion-internacional" src="https://historico.mejoredu.gob.mx/wp-content/uploads/2018/11/planea.png" alt="Suresh Dasari Card">
+                        </div>
+      
+                        <div class="card-body card-body-evaluaciones-internacionales">
+                            <h5 class="card-title"><strong>PLANEA Básica</strong></h5>
+                            <p class="card-text">El propósito de su aplicación es para conocer la calidad y el grado en que los estudiantes mexicanos de educación básica dominan aprendizajes esenciales en diferentes momentos de la educación.</p>
+                        </div>
+  
+                        <a href="" class="btn btn-primary btn-info-pisa rounded-form-25">Ver información oficial</a>
+  
+                      </div>
+  
+                      <div class="card card-evaluaciones-internacionales rounded-form-25 text-center">
+  
+                        <div class="card-image-container-planea-ms">
+                          <img class="card-img card-img-evaluacion-internacional" src="https://historico.mejoredu.gob.mx/wp-content/uploads/2018/11/planea.png" alt="Suresh Dasari Card">
+                        </div>
+      
+                        <div class="card-body card-body-evaluaciones-internacionales">
+                            <h5 class="card-title"><strong>PLANEA Media Superior</strong></h5>
+                            <p class="card-text">El propósito de su aplicación es para conocer la calidad y el grado en que los estudiantes mexicanos de media superior dominan aprendizajes esenciales en diferentes momentos de la educación.</p>
+                        </div><br>
+  
+                        <a href="" class="btn btn-primary btn-info-talis rounded-form-25">Ver información oficial</a>
+  
+                      </div>
+  
+                    </div>
+                    
+                  </div>
+
+                  <div class="col-lg-1"></div>
+                </div>
+
+              </div>
+              
+            </div>
+
+          
+          </div>
+
+          <div class="tab-pane" id="epe-logistica-exums" aria-labelledby="epe-logistica-tab">
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container ">
+              <div class="container-text">
+                <h3 class="display- "><strong>EXUMS</strong></h3><br>
+                <p class="lead">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste in eum provident nulla aliquam tempore, necessitatibus molestiae, iusto iure debitis 
+                  commodi doloribus fuga incidunt? Nam deleniti vitae quibusdam perferendis!.
+                </p>
+              </div>
+              
+            </div>
+
+          
+          </div>
+
+          <div class="tab-pane" id="epe-logistica-rima" aria-labelledby="epe-logistica-tab">
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container ">
+              <div class="container-text">
+                <h3 class="display- "><strong>RIMA</strong></h3><br>
+                <p class="lead">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste in eum provident nulla aliquam tempore, necessitatibus molestiae, iusto iure debitis 
+                  commodi doloribus fuga incidunt? Nam deleniti vitae quibusdam perferendis!.
+                </p>
+              </div>
+              
+            </div>
+
+          
+          </div>
+          
+          <!-- Departamento de Evaluación de la Práctica de la Enseñanza -->
+          <div class="tab-pane" id="epe-evaluacion-practica-enseñanza-page" aria-labelledby="epe-evaluacion-practica-enseñanza-tab">
+            <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container ">
+              <div class="container-text">
+                <h3 class="display- "><strong>Departamento de Evaluación de la Práctica de la Enseñanza</strong></h3><br>
+                <p class="lead">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde iste in eum provident nulla aliquam tempore, necessitatibus molestiae, iusto iure debitis 
+                  commodi doloribus fuga incidunt? Nam deleniti vitae quibusdam perferendis!.
+                </p>
+              </div>
+              
+            </div>
+          </div>
+
         </div>
 
 
       </div>
 
       <div class="col-md-1"> </div>
+
     </div>
 
     <!-- Bootstrap scripts -->

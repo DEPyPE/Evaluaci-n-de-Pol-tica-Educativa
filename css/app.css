@@ -4,6 +4,35 @@ body{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* VERSIÓN CON EL MENÚ CORTO
+
+.banner-container{
+    width: 99% !important;
+    height: 80px !important;
+    overflow-y: hidden !important;
+    margin-bottom: 2% !important;
+    background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(250, 0, 0) 50%, orange 100% ) !important;
+}
+
+.img-banner{
+    position: absolute;
+    height: 75% !important;
+    right: 10% !important;
+    object-fit: fill !important;
+    overflow-y: hidden !important;
+}
+
+.title-page-evaluacion-educativa{
+    position: absolute;
+    font-size: 43px;
+    color: white !important;
+    margin-top: 13px !important;
+    margin-left: 7% !important;
+    font-family: 'Baloo 2';
+    font-weight: bold;
+}
+*/
+
 .banner-container{
     width: 99% !important;
     height: 160px !important;
@@ -20,7 +49,7 @@ body{
     overflow-y: hidden !important;
 }
 
-.text-evaluacion-educativa{
+.title-page-evaluacion-educativa{
     position: absolute;
     font-size: 45px;
     color: white !important;
@@ -39,8 +68,13 @@ body{
 }
 
 .rounded-form{
-    border-radius: 6px !important;
+    border-radius: 20px !important;
 }
+
+.rounded-form-25{
+    border-radius: 25px !important;
+}
+
 
 .row{
     margin-right: 0px !important;
@@ -112,7 +146,12 @@ body{
     padding: 0px !important;
 }
 
+
+
 /* ESTILOS PARA EL MENU VERTICAL */
+.evaluaciones-internacionales-container{
+    padding-top: 30px;
+}
 
 .epe-menu-evaluacion-educativa.menu-evaluacion-educativa-active-item{
     background-color: rgba(230, 230, 230, 1) !important;
@@ -225,7 +264,29 @@ body{
     padding-right: 2px !important;
 }
 
+.card-main-menu{
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
 /* SUBMENU PARA EL DEPyPE */
+
+.dropdown-menu{
+    margin: 1px 5px 1px 15px !important;
+    padding-left: 10px;
+    border-left: 6px solid #007bff !important;
+    border-radius: 8px !important;
+}
+
+.dropdown-menu .dropdown-item{
+    background-color: white !important;
+    width: 97% !important;
+    border-radius: 8px;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(230, 230, 230, 0.8) !important;
+}
 
 .depype-page-container{
     padding-top: 30px;
@@ -248,3 +309,58 @@ body{
     font-family: 'Baloo 2';
     font-weight: bold;
 }
+
+.depype-peeme-title{
+    font-size: 28px !important;
+    font-family: 'Baloo 2';
+    font-weight: bold;
+    margin-bottom: 25px !important;
+}
+
+/* ESTILOS PARA LAS TARJETA DE EVALUACIONES */
+
+.card-evaluaciones-internacionales{
+}
+
+.card-body-evaluaciones-internacionales{
+    padding: 0 30px 60px 30px !important;
+}
+
+.card-title{
+    color: #2ea3f2;
+}
+
+.card-image-container-pisa{
+    padding: 15px 40px 20px 40px !important;
+    width: 100% !important;
+}
+
+.card-image-container-talis{
+    padding: 10px 30px 0px 40px !important;
+    width: 100% !important;
+}
+
+.card-image-container-planea-basica, .card-image-container-planea-ms{
+    padding: 25px 40px 30px 50px !important;
+    width: 100% !important;
+}
+
+.card-img-evaluacion-internacional{
+    object-fit: cover !important;
+}
+
+.card-footer-evaluaciones{
+    position: relative;
+    padding: 15px !important;
+}
+
+.btn-info-pisa, .btn-info-talis{
+    position: absolute;
+    bottom: -25px;
+    width: auto !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%);
+    padding: 10px 25px !important;
+}
+
+

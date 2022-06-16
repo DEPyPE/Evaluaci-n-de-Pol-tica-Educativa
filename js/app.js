@@ -44,16 +44,77 @@
     });
 
     $('.dropdown-menu-depype-TEST').on('click', '.dropdown-item', function(){
-        console.log( 'Clicked => ', $(this).attr('name-program') );
-        $('#epe-inicio-page').removeClass('show');
-        $('#epe-inicio-page').removeClass('active');
+        var program = $(this).attr('name-program');
 
-        $('#epe-depype-page').addClass('show');
-        $('#epe-depype-page').addClass('active');
-        $('#epe-depype-page').addClass('fade');
+        if( program =='peeme' ){
+            $('#epe-depype-peeme').siblings().removeClass('active');
+            $('#epe-depype-peeme').siblings().removeClass('show');
+
+            $('#epe-depype-peeme').addClass('show');
+            $('#epe-depype-peeme').addClass('active');
+        }else if( program == 'agenda-anual' ){
+            $('#epe-depype-agenda-anual').siblings().removeClass('active');
+            $('#epe-depype-agenda-anual').siblings().removeClass('show');
+
+            $('#epe-depype-agenda-anual').addClass('show');
+            $('#epe-depype-agenda-anual').addClass('active');
+            
+        }else if( program == 'evaluacion-p-y-p' ){
+            $('#epe-depype-evaluacion_p_y_p').siblings().removeClass('active');
+            $('#epe-depype-evaluacion_p_y_p').siblings().removeClass('show');
+
+            $('#epe-depype-evaluacion_p_y_p').addClass('show');
+            $('#epe-depype-evaluacion_p_y_p').addClass('active');
+        }else if( program == 'contraloria-social' ){
+            $('#epe-depype-contraloria-social').siblings().removeClass('active');
+            $('#epe-depype-contraloria-social').siblings().removeClass('show');
+
+            $('#epe-depype-contraloria-social').addClass('show');
+            $('#epe-depype-contraloria-social').addClass('active');
+        }else if( program == 'normativa' ){
+            
+        }
+
+        console.log( 'Clicked => ', $(this).attr('name-program') );
+
+    });
+    
+    
+    $('.dropdown-menu-logistica').on('click', '.dropdown-item', function(){
+        var program = $(this).attr('name-program');
+
+        if( program =='evaluaciones-internacionales' ){
+            $('#epe-logistica-evaluaciones-internacionales').siblings().removeClass('active');
+            $('#epe-logistica-evaluaciones-internacionales').siblings().removeClass('show');
+
+            $('#epe-logistica-evaluaciones-internacionales').addClass('show');
+            $('#epe-logistica-evaluaciones-internacionales').addClass('active');
+        }else if( program == 'evaluaciones-federales' ){
+            $('#epe-logistica-evaluaciones-nacionales').siblings().removeClass('active');
+            $('#epe-logistica-evaluaciones-nacionales').siblings().removeClass('show');
+
+            $('#epe-logistica-evaluaciones-nacionales').addClass('show');
+            $('#epe-logistica-evaluaciones-nacionales').addClass('active');
+            
+        }else if( program == 'EXUMS' ){
+            $('#epe-logistica-exums').siblings().removeClass('active');
+            $('#epe-logistica-exums').siblings().removeClass('show');
+
+            $('#epe-logistica-exums').addClass('show');
+            $('#epe-logistica-exums').addClass('active');
+        }else if( program == 'RIMA' ){
+            $('#epe-logistica-rima').siblings().removeClass('active');
+            $('#epe-logistica-rima').siblings().removeClass('show');
+
+            $('#epe-logistica-rima').addClass('show');
+            $('#epe-logistica-rima').addClass('active');
+        }
+
+        console.log( 'Clicked => ', $(this).attr('name-program') );
+
     });
 
-/*
+    /*
     $('.depype-menu .list-group-item').on('click', function(){
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
