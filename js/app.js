@@ -114,6 +114,10 @@
 
     });
 
+    $('.btn-info-planea-basica').on('click', function(){
+
+    });
+
     /*
     $('.depype-menu .list-group-item').on('click', function(){
         $(this).addClass('active');

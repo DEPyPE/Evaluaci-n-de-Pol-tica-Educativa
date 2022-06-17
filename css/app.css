@@ -1,11 +1,18 @@
 
 body{
-	background-color: rgb(240, 240, 240);
+	background-color: rgb(240, 240, 240) !important;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* VERSIÓN CON EL MENÚ CORTO
+.main-banner-dgpe{
+    margin-top: 30px !important;
+}
 
+.img-menu-seg{
+    width: 100% !important;
+}
+
+/* VERSIÓN CON EL MENÚ CORTO
 .banner-container{
     width: 99% !important;
     height: 80px !important;
@@ -18,7 +25,7 @@ body{
     position: absolute;
     height: 75% !important;
     right: 10% !important;
-    object-fit: fill !important;
+    object-fit: contain !important;
     overflow-y: hidden !important;
 }
 
@@ -31,8 +38,8 @@ body{
     font-family: 'Baloo 2';
     font-weight: bold;
 }
-*/
 
+*/
 .banner-container{
     width: 99% !important;
     height: 160px !important;
@@ -58,6 +65,7 @@ body{
     font-family: 'Baloo 2';
     font-weight: bold;
 }
+*/
 
 .box-shadow-style{
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%) !important;
@@ -107,6 +115,13 @@ body{
     border-right: 1px solid rgba(230, 230, 230, 1);
 }
 
+/* #v-pills-tabContent */
+
+.jumbotron{
+    border: 1px solid rgba(220, 220, 220, 1) !important;
+    border-radius: 15px !important;
+}
+
 .epe-nav-flush{
     border-bottom: 1px solid rgba(230, 230, 230, 1);
 }
@@ -128,6 +143,7 @@ body{
     border-bottom-right-radius: 5px !important;
     font-size: 15px !important;
     color: black;
+    padding-right: 25px !important;
 }
 
 .epe-nav-item:hover{
@@ -142,16 +158,15 @@ body{
 }
 
 .card-body-style{
-    margin: 20px 10px 20px 10px !important;
+    margin: 20px 18px !important;
     padding: 0px !important;
 }
 
-
+.card-evaluaciones-nacionales-docs{
+    overflow-y: auto !important;
+}
 
 /* ESTILOS PARA EL MENU VERTICAL */
-.evaluaciones-internacionales-container{
-    padding-top: 30px;
-}
 
 .epe-menu-evaluacion-educativa.menu-evaluacion-educativa-active-item{
     background-color: rgba(230, 230, 230, 1) !important;
@@ -202,7 +217,7 @@ body{
     border-top: 0.4em solid transparent;
     border-bottom: 0.4em solid transparent;
     border-left: 0.4em solid;
-    right: 0 !important;
+    right: 10px !important;
     z-index: 1000;
 }
 
@@ -319,20 +334,20 @@ body{
 
 /* ESTILOS PARA LAS TARJETA DE EVALUACIONES */
 
-.card-evaluaciones-internacionales{
+.evaluaciones-internacionales-container, .evaluaciones-nacionales-container{
+    padding-top: 40px !important;
 }
 
 .card-body-evaluaciones-internacionales{
-    padding: 0 30px 60px 30px !important;
+    padding: 0 30px 50px 30px !important;
+}
+
+.card-body-evaluaciones-nacionales{
+    padding: 0 30px 25px 30px !important;
 }
 
 .card-title{
     color: #2ea3f2;
-}
-
-.card-image-container-pisa{
-    padding: 15px 40px 20px 40px !important;
-    width: 100% !important;
 }
 
 .card-image-container-talis{
@@ -345,13 +360,13 @@ body{
     width: 100% !important;
 }
 
-.card-img-evaluacion-internacional{
-    object-fit: cover !important;
+.card-image-container-planea-basica{
+    padding: 25px 0px 30px 50px !important;
+    width: 100% !important;
 }
 
-.card-footer-evaluaciones{
-    position: relative;
-    padding: 15px !important;
+.card-img-evaluacion-internacional{
+    object-fit: cover !important;
 }
 
 .btn-info-pisa, .btn-info-talis{
@@ -363,4 +378,102 @@ body{
     padding: 10px 25px !important;
 }
 
+.card-image-container-pisa{
+    overflow: hidden;
+    border-radius: 25px !important;
+}
 
+/* INFORMACIÓN DE CADA EVALUACIÓN Y SUS ARCHIVOS */
+
+.mb-60px{
+    margin-bottom: 60px !important;
+}
+
+/*
+.card-evaluacion{
+    height: 390px !important;
+}
+*/
+
+.col-evaluacion-info{
+    padding-right: 0 !important;
+}
+
+.card-image-container{
+    padding: 10px 10px 10px 40px !important;
+    margin:   0px  0px 10px  0px !important;
+    width: 100% !important;
+}
+
+.card-body-text-content{
+    padding: 0 0px 20px 30px !important;
+}
+
+.btn-evaluacion-info{
+    position: absolute;
+    bottom: -22px;
+    width: auto !important;
+    margin-left: 33% !important;
+    transform: translateX(-100%);
+    padding: 10px 25px !important;
+    color: white !important;
+}
+
+
+.col-v-divider{
+    padding-left: 0 !important;
+}
+
+.v-divider{
+    position: absolute;
+    height: 80% !important;
+    width: 1px !important;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.125) !important;
+    right: 30%;
+}
+
+
+.col-evaluacion-documentos{
+    padding-left: 0 !important;
+    overflow-y: auto !important;
+    height: 380px !important;
+}
+
+.docs-container{
+    position: absolute;
+    top: 30px;
+    width: 95%;
+    height: 82%;
+    overflow: auto;
+}
+    
+.list-group{
+    margin: 10px 10px 10px 25px !important;
+    border-radius: 25px !important;
+}
+
+.list-group-item:hover{
+    cursor: pointer;
+}
+
+.type-document-align{
+    position: absolute;
+    right: 20px !important;
+    font-style: normal;
+}
+
+#tabs-docs-evaluacion{
+    margin: 36px 10px 15px 10px !important;
+}
+
+.tab-content-docs{
+    height: 66% !important;
+    margin-top: -15px !important;
+    margin-left: -15px !important;
+
+    overflow: auto !important;
+}
+
+/* --------------------------------------------- */
