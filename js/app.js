@@ -7,6 +7,38 @@
         $('#headingOne').find('span').css('color', 'white');
     });
 
+//  Trigger for card-reveal PLANEA
+$('#ShowDocsEcea').on('click', function(){  
+    $('.btn-info-ecea').fadeOut(100, function(){    
+        $('#ShowDocsEcea').tooltip('hide');
+    });
+
+    $('.card-reveal-ecea').slideToggle('slow');
+
+});
+
+$('.card-reveal-ecea .close').on('click', function(){
+    $('.card-reveal-ecea').slideToggle('slow', function(){
+        $('.btn-info-ecea').fadeIn('fast');
+    });
+});
+
+//  Trigger for card-reveal PLANEA
+$('#ShowDocsPlanea').on('click', function(){  
+    $('.btn-info-planea').fadeOut(100, function(){    
+        $('#ShowDocsPlanea').tooltip('hide');
+    });
+
+    $('.card-reveal-planea').slideToggle('slow');
+
+});
+
+$('.card-reveal-planea .close').on('click', function(){
+    $('.card-reveal-planea').slideToggle('slow', function(){
+        $('.btn-info-planea').fadeIn('fast');
+    });
+});
+
 //  Trigger for card-reveal PISA
     $('#ShowDocsPisa').on('click', function(){  
         $('.btn-info-pisa').fadeOut(100, function(){    
@@ -90,7 +122,6 @@
 
             $('#epe-depype-agenda-anual').addClass('show');
             $('#epe-depype-agenda-anual').addClass('active');
-            
         }else if( program == 'evaluacion-p-y-p' ){
             $('#epe-depype-evaluacion_p_y_p').siblings().removeClass('active');
             $('#epe-depype-evaluacion_p_y_p').siblings().removeClass('show');
@@ -115,7 +146,6 @@
 
     });
     
-    
     $('.dropdown-menu-logistica').on('click', '.dropdown-item', function(){
         var program = $(this).attr('name-program');
 
@@ -125,6 +155,7 @@
 
             $('#epe-logistica-evaluaciones-internacionales').addClass('show');
             $('#epe-logistica-evaluaciones-internacionales').addClass('active');
+
         }else if( program == 'evaluaciones-federales' ){
             $('#epe-logistica-evaluaciones-nacionales').siblings().removeClass('active');
             $('#epe-logistica-evaluaciones-nacionales').siblings().removeClass('show');

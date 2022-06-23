@@ -488,6 +488,12 @@ body{
     border-radius: 20px;
 }
 
+.img-ecea{
+    display: block;
+    width: 35% !important;
+    margin: auto;
+}
+
 .card{
     font-family: 'Roboto', sans-serif; 
     margin-top: 10px;
@@ -505,6 +511,10 @@ body{
 
 .card-content-talis{
     padding-top: 0 !important;
+}
+
+.card-content-ecea{
+    padding-bottom: 40px !important;
 }
 
 .card .card-action{
@@ -570,7 +580,8 @@ body{
     margin: 0 !important;
 }
 
-.btn-info-pisa, .btn-info-talis{
+.btn-info-pisa, .btn-info-talis, .btn-info-planea,
+.btn-info-ecea{
     position: absolute;
     bottom: -25px;
     width: 60% !important;
@@ -579,21 +590,23 @@ body{
     padding: 10px 25px !important;
 }
 
-.btn-reveal-docs-pisa, .btn-reveal-docs-talis{
+.btn-reveal-docs-pisa, .btn-reveal-docs-talis,
+.btn-reveal-docs-planea, .btn-reveal-docs-ecea{
     position: absolute;
     bottom: 10px;
     right: 10px;
     background-color: rgba(230, 230, 230, 0.8);
     border: 1px solid rgba(210, 210, 210, 0.6);
 
-    width: 50px;
-    height: 50px;
-    padding: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 7px 5px 5px 5px;
     font-size: 18px;
     border-radius: 50% !important;
 }
 
-.btn-reveal-docs-pisa:hover, .btn-reveal-docs-talis:hover{
+.btn-reveal-docs-pisa:hover, .btn-reveal-docs-talis:hover,
+.btn-reveal-docs-planea:hover, .btn-reveal-docs-ecea:hover{
     background-color: rgba(210, 210, 210, 0.8);
 }
 
@@ -603,6 +616,11 @@ body{
     padding: 5px !important;
     border-radius: 50% !important;
     background-color: rgba(220, 220, 220, 0.8) !important;
+}
+
+.text-list-item{
+    width: 90% !important;
+
 }
 
 /* --------------------------------------------- */

@@ -694,7 +694,7 @@
           </div>
 
           <!-- Departamento de Logística y Aplicación de Evaluaciones -->
-          <div class="tab-pane show active" id="epe-logistica-evaluaciones-internacionales" aria-labelledby="epe-logistica-tab">
+          <div class="tab-pane" id="epe-logistica-evaluaciones-internacionales" aria-labelledby="epe-logistica-tab">
             <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container evaluaciones-internacionales-container">
               <div class="container-text">
 
@@ -824,7 +824,7 @@
           
           </div>
 
-          <div class="tab-pane" id="epe-logistica-evaluaciones-nacionales" aria-labelledby="epe-logistica-tab">
+          <div class="tab-pane show active" id="epe-logistica-evaluaciones-nacionales" aria-labelledby="epe-logistica-tab">
             <div class="jumbotron jumbotron-fluid rounded-form box-shadow-style introduction-container evaluaciones-nacionales-container">
               <div class="container-text">
 
@@ -834,37 +834,38 @@
                   commodi doloribus fuga incidunt? Nam deleniti vitae quibusdam perferendis!.
                 </p> <br>
 
-                <div class="row mb-60px">
+        
+
+                <div class="row">
                   <div class="col-lg-1"></div>
+
                   <div class="col-lg-10">
 
-                    <div class="card card-evaluaciones-nacionales rounded-form-25 text-center">
-    
-                      <div class="row">
+                    <div class="card-deck">
 
-                        <!-- Información de la evaluación -->
-                        <div class="col-lg-5 col-evaluacion-info">
+                      <div class="card card-evaluacion rounded-form mb-60px">
 
-                          <div class="card-image-container-planea-basica">
-                            <img class="card-img card-img-evaluacion-internacional" src="https://historico.mejoredu.gob.mx/wp-content/uploads/2018/11/planea.png" alt="Suresh Dasari Card">
-                          </div>
-        
-                          <div class="card-body card-body-text-content">
-                              <h5 class="card-title"><strong>PLANEA Básica</strong></h5>
-                              <p class="card-text">El propósito de su aplicación es para conocer la calidad y el grado en que los estudiantes mexicanos de educación básica dominan aprendizajes esenciales en diferentes momentos de la educación.</p>
-                          </div>
-    
-                          <a class="btn btn-primary btn-evaluacion-info rounded-form-25">Más información</a>
+                        <div class="card-image-container container-img-planea">
+                          <img class="card-img card-img-evaluacion-internacional" src="https://historico.mejoredu.gob.mx/wp-content/uploads/2018/11/planea.png" alt="Suresh Dasari Card">
                         </div>
-
-                        <!-- Divisor -->
-                        <div class="col-lg-1 col-v-divider">
-                          <div class="v-divider"></div>
+                        
+                        <div class="card-content card-content-planea">
+                          <div class="card-body card-body-evaluaciones">
+                            <p class="card-text">El propósito de su aplicación es para conocer la calidad y el grado en que los estudiantes mexicanos de educación básica
+                              dominan aprendizajes esenciales en diferentes momentos de la educación.
+                            </p>
+  
+                            <button type="button" id="ShowDocsPlanea" class="btn btn-sm btn-reveal-docs-planea rounded-form pull-right" data-toggle="tooltip" data-html="true" title="Ver documentos">
+                              <i class="material-icons">expand_less</i>
+                            </button>
+                          </div>
+  
+                          <a href="https://historico.mejoredu.gob.mx/evaluaciones/planea/" target="_blank" class="btn btn-primary btn-info-planea rounded-form-25">Más información <i class="material-icons right">open_in_new</i> </a>
                         </div>
-
-                        <!-- Documentos -->
-                        <div class="col-lg-6 col-evaluacion-documentos">
-
+  
+                        <div class="card-reveal card-reveal-planea rounded-form"> 
+                            <span class="card-title card-title-docs-evaluacion">Documentos</span> <button type="button" class="close btn-close-card-reveal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            
                             <div class="docs-container">
                               <div class="list-group">
                                 <a class="list-group-item list-group-item-action text-left">Planea_1 <i class="type-document-align">pdf</i> </a>
@@ -877,54 +878,53 @@
                                 <a class="list-group-item list-group-item-action text-left">Planea_8 <i class="type-document-align">pdf</i> </a>
                               </div>
                             </div>
-
+  
                         </div>
-
+  
                       </div>
 
-                    </div>
+                      <div class="card card-evaluacion rounded-form mb-60px">
 
-                  </div>
-                  <div class="col-lg-1"></div>
-                </div>
-
-                <div class="row">
-                  <div class="col-lg-1"></div>
-
-                  <div class="col-lg-10">
-
-                    <div class="card-deck">
-
-                      <div class="card card-evaluaciones-nacionales rounded-form-25 text-center">
-    
-                        <div class="card-image-container-planea-basica">
-                          <img class="card-img card-img-evaluacion-internacional" src="https://historico.mejoredu.gob.mx/wp-content/uploads/2018/11/planea.png" alt="Suresh Dasari Card">
+                        <div class="card-image-container container-img-ecea">
+                          <img class="card-img img-ecea" src="assets/logos_evaluaciones/ecea.png">
                         </div>
-      
-                        <div class="card-body card-body-evaluaciones-nacionales">
-                            <h5 class="card-title"><strong>PLANEA Básica</strong></h5>
-                            <p class="card-text">El propósito de su aplicación es para conocer la calidad y el grado en que los estudiantes mexicanos de educación básica dominan aprendizajes esenciales en diferentes momentos de la educación.</p>
+                        
+                        <div class="card-content card-content-ecea">
+                          <div class="card-body card-body-evaluaciones">
+                            <p class="card-text">La Evaluación de las Condiciones Básicas para la Enseñanza y el Aprendizaje (ECEA) es una evaluación cuyo objetivo es dar a conocer la medida en que las escuelas de educación obligatoria del país cuentan con condiciones básicas para su operación y funcionamiento.
+                            </p>
+  
+                            <button type="button" id="ShowDocsEcea" class="btn btn-sm btn-reveal-docs-ecea rounded-form pull-right" data-toggle="tooltip" data-html="true" title="Ver documentos">
+                              <i class="material-icons">expand_less</i>
+                            </button>
+                          </div>
+  
+                          <a href="https://historico.mejoredu.gob.mx/evaluaciones/ecea/" target="_blank" class="btn btn-primary btn-info-ecea rounded-form-25">Más información <i class="material-icons right">open_in_new</i> </a>
                         </div>
   
-                        <a href="" class="btn btn-primary btn-info-pisa rounded-form-25">Más información</a>
+                        <div class="card-reveal card-reveal-ecea rounded-form"> 
+                            <span class="card-title card-title-docs-evaluacion">Documentos</span> <button type="button" class="close btn-close-card-reveal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            
+                            <ul class="nav nav-tabs" id="tabs-docs-evaluacion" role="tablist">
+                              <li class="nav-item">
+                                <a class="nav-link active" id="tabECEA2016" data-toggle="tab" href="#tab-ecea-docs-2015" role="tab" aria-controls="ECEAdocs2015" aria-selected="false">2015</a>
+                              </li>
+                            </ul>
+                            
+                            <div class="tab-content tab-content-docs">
+  
+                              <div class="tab-pane fade show active" id="tab-ecea-docs-2015" role="tabpanel" aria-labelledby="tabECEA2016">
+                                <div class="list-group">
+                                  <a class="list-group-item list-group-item-action text-left text-truncate">INFORME DE RESULTADOS ECEA<i class="type-document-align right">pdf</i> </a>
+                                </div>
+                              </div>
+  
+                            </div>
+  
+                        </div>
   
                       </div>
-  
-                      <div class="card card-evaluaciones-nacionales rounded-form-25 text-center">
-  
-                        <div class="card-image-container-planea-ms">
-                          <img class="card-img card-img-evaluacion-internacional" src="https://historico.mejoredu.gob.mx/wp-content/uploads/2018/11/planea.png" alt="Suresh Dasari Card">
-                        </div>
-      
-                        <div class="card-body card-body-evaluaciones-nacionales">
-                            <h5 class="card-title"><strong>PLANEA Media Superior</strong></h5>
-                            <p class="card-text">El propósito de su aplicación es para conocer la calidad y el grado en que los estudiantes mexicanos de media superior dominan aprendizajes esenciales en diferentes momentos de la educación.</p>
-                        </div><br>
-  
-                        <a href="" class="btn btn-primary btn-info-talis rounded-form-25">Más información</a>
-  
-                      </div>
-  
+
                     </div>
                     
                   </div>
