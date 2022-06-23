@@ -1,8 +1,40 @@
 
     $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+
 //      $('.depype-menu .nav-item')[0].click();
         $('#headingOne').find('button').css('color', 'white');
         $('#headingOne').find('span').css('color', 'white');
+    });
+
+//  Trigger for card-reveal PISA
+    $('#ShowDocsPisa').on('click', function(){  
+        $('.btn-info-pisa').fadeOut(100, function(){    
+            $('#ShowDocsPisa').tooltip('hide');
+        });
+
+        $('.card-reveal-pisa').slideToggle('slow');
+
+    });
+
+    $('.card-reveal-pisa .close').on('click', function(){
+        $('.card-reveal-pisa').slideToggle('slow', function(){
+            $('.btn-info-pisa').fadeIn('fast');
+        });
+    });
+
+//  Trigger for card-reveal TALIS
+    $('#ShowDocsTalis').on('click', function(){  
+        $('.btn-info-talis').fadeOut(100);
+
+        $( $('.card-reveal-talis') ).slideToggle('slow');
+        $('#ShowDocsTalis').tooltip('hide');
+    });
+    
+    $('.card-reveal-talis .close').on('click', function(){
+        $('.card-reveal-talis').slideToggle('slow', function(){
+            $('.btn-info-talis').fadeIn('fast');
+        });
     });
 
     $('.epe-menu-normativa .epe-nav-item').on('click', function(){
@@ -72,7 +104,11 @@
             $('#epe-depype-contraloria-social').addClass('show');
             $('#epe-depype-contraloria-social').addClass('active');
         }else if( program == 'normativa' ){
-            
+            $('#epe-depype-normativa').siblings().removeClass('active');
+            $('#epe-depype-normativa').siblings().removeClass('show');
+
+            $('#epe-depype-normativa').addClass('show');
+            $('#epe-depype-normativa').addClass('active');
         }
 
         console.log( 'Clicked => ', $(this).attr('name-program') );

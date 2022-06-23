@@ -12,9 +12,8 @@ body{
     width: 100% !important;
 }
 
-/* VERSIÓN CON EL MENÚ CORTO
 .banner-container{
-    width: 99% !important;
+    width: 100% !important;
     height: 80px !important;
     overflow-y: hidden !important;
     margin-bottom: 2% !important;
@@ -31,7 +30,7 @@ body{
 
 .title-page-evaluacion-educativa{
     position: absolute;
-    font-size: 43px;
+    font-size: 40px;
     color: white !important;
     margin-top: 13px !important;
     margin-left: 7% !important;
@@ -40,6 +39,7 @@ body{
 }
 
 */
+/* VERSIÓN CON EL MENÚ CORTO
 .banner-container{
     width: 99% !important;
     height: 160px !important;
@@ -139,11 +139,19 @@ body{
 
 .epe-nav-item{
     background-color: rgba(255, 255, 255, 0.7);
-    border-top-right-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
     font-size: 15px !important;
     color: black;
-    padding-right: 25px !important;
+    padding-right: 35px !important;
+}
+
+.epe-nav-item{
+    border-top: 1px solid rgba(220, 220, 220, 1);
+    border-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+
+.dropdown-evaluacion-educativa:last-child{
+    border-bottom: 1px solid rgba(220, 220, 220, 1);
 }
 
 .epe-nav-item:hover{
@@ -221,6 +229,13 @@ body{
     z-index: 1000;
 }
 
+.dropdown-item {
+    padding: 10px 1.5rem;
+}
+
+.dropdown-divider {
+    margin: 5px 0 !important;
+}
 
 .accordion-menu{
     margin-top: 15px !important;
@@ -282,6 +297,17 @@ body{
 .card-main-menu{
     width: 100%;
     margin-bottom: 30px !important;
+    margin-top: 0 !important;
+}
+
+.left {
+    float: left !important;
+    margin-right: 15px;
+}
+
+.right {
+    float: right !important;
+    margin-left: 15px;
 }
 
 /* SUBMENU PARA EL DEPyPE */
@@ -339,7 +365,7 @@ body{
 }
 
 .card-body-evaluaciones-internacionales{
-    padding: 0 30px 50px 30px !important;
+    padding: 0 25px 35px 25px !important;
 }
 
 .card-body-evaluaciones-nacionales{
@@ -348,11 +374,6 @@ body{
 
 .card-title{
     color: #2ea3f2;
-}
-
-.card-image-container-talis{
-    padding: 10px 30px 0px 40px !important;
-    width: 100% !important;
 }
 
 .card-image-container-planea-basica, .card-image-container-planea-ms{
@@ -365,22 +386,8 @@ body{
     width: 100% !important;
 }
 
-.card-img-evaluacion-internacional{
-    object-fit: cover !important;
-}
-
-.btn-info-pisa, .btn-info-talis{
-    position: absolute;
-    bottom: -25px;
-    width: auto !important;
-    margin-left: 50% !important;
-    transform: translateX(-50%);
-    padding: 10px 25px !important;
-}
-
-.card-image-container-pisa{
-    overflow: hidden;
-    border-radius: 25px !important;
+.text-descripcion-departamento{
+    text-align: justify !important;
 }
 
 /* INFORMACIÓN DE CADA EVALUACIÓN Y SUS ARCHIVOS */
@@ -400,9 +407,13 @@ body{
 }
 
 .card-image-container{
-    padding: 10px 10px 10px 40px !important;
+    padding: 10px 10px 0px 10px !important;
     margin:   0px  0px 10px  0px !important;
     width: 100% !important;
+}
+
+.container-img-talis{
+    padding: 10px 10px 0 10px !important;
 }
 
 .card-body-text-content{
@@ -440,22 +451,10 @@ body{
     overflow-y: auto !important;
     height: 380px !important;
 }
-
-.docs-container{
-    position: absolute;
-    top: 30px;
-    width: 95%;
-    height: 82%;
-    overflow: auto;
-}
     
 .list-group{
     margin: 10px 10px 10px 25px !important;
     border-radius: 25px !important;
-}
-
-.list-group-item:hover{
-    cursor: pointer;
 }
 
 .type-document-align{
@@ -465,11 +464,11 @@ body{
 }
 
 #tabs-docs-evaluacion{
-    margin: 36px 10px 15px 10px !important;
+    margin: 15px 10px 15px 10px !important;
 }
 
 .tab-content-docs{
-    height: 66% !important;
+    height: 71% !important;
     margin-top: -15px !important;
     margin-left: -15px !important;
 
@@ -477,3 +476,156 @@ body{
 }
 
 /* --------------------------------------------- */
+
+/* CARD REVEAL */
+
+.card-evaluacion{
+    
+}
+
+.card .card-image{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card{
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 10px;
+    position: relative;
+}
+
+.card .card-content {
+    padding: 10px;    
+}
+
+.card .card-content .card-title, .card-reveal .card-title{
+    font-size: 24px;
+    font-weight: 200;    
+}
+
+.card-content-talis{
+    padding-top: 0 !important;
+}
+
+.card .card-action{
+    padding: 20px;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+}
+.card .card-action a{
+    font-size: 15px;
+    color: #ffab40;
+    text-transform:uppercase;
+    margin-right: 20px;    
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.card .card-action a:hover{    
+    color:#ffd8a6;
+    text-decoration:none;
+}
+
+.card .card-reveal{    
+    padding: 20px;
+    position: absolute;
+    background-color: #FFF;
+    width: 100%;
+    overflow-y: auto;
+    /*top: 0;*/
+    left:0;
+    bottom:0;
+    height: 100%;
+    z-index: 1;
+    display: none;    
+}
+
+.card .card-reveal p{
+    color: rgba(0, 0, 0, 0.71);
+    margin:20px ;
+}
+
+.card-title-docs-evaluacion{
+    color: #007bff !important;
+    font-weight: 400 !important;
+}
+
+.container-img-evaluacion-talis{
+    padding-bottom: -0 !important;
+}
+
+.docs-container-talis{
+    margin-top: 20px !important;
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+}
+
+.list-group-item:hover{
+    cursor: pointer !important;
+}
+
+.list-group-talis{
+    margin: 0 !important;
+}
+
+.btn-info-pisa, .btn-info-talis{
+    position: absolute;
+    bottom: -25px;
+    width: 60% !important;
+    margin-left: 50% !important;
+    transform: translateX(-55%);
+    padding: 10px 25px !important;
+}
+
+.btn-reveal-docs-pisa, .btn-reveal-docs-talis{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(230, 230, 230, 0.8);
+    border: 1px solid rgba(210, 210, 210, 0.6);
+
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 50% !important;
+}
+
+.btn-reveal-docs-pisa:hover, .btn-reveal-docs-talis:hover{
+    background-color: rgba(210, 210, 210, 0.8);
+}
+
+.btn-close-card-reveal{
+    width: 40px !important;
+    height: 40px !important;
+    padding: 5px !important;
+    border-radius: 50% !important;
+    background-color: rgba(220, 220, 220, 0.8) !important;
+}
+
+/* --------------------------------------------- */
+
+
+/* NORMATIVA */
+
+.list-group-normativa{
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 25px !important;
+}
+
+.list-group-item-normativa:hover{
+    cursor: pointer !important;
+}
+
+.list-group-item-normativa:first-child{
+    border-top-right-radius: 28px !important;
+    border-top-left-radius: 28px !important;
+}
+
+.list-group-item-normativa:last-child{
+    border-bottom-right-radius: 28px !important;
+    border-bottom-left-radius: 28px !important;
+}
