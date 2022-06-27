@@ -186,6 +186,7 @@ body{
     background-color: rgba(230, 230, 230, 1) !important;
     border-left: 4px solid rgba(0, 123, 255, 1) !important;
     color: black !important;
+    border-radius: 8px !important;
 }
 
 .dropdown-evaluacion-educativa:hover{
@@ -261,7 +262,7 @@ body{
 }
 
 .card-menu-item-header.active{
-    background-color: #007bff !important;
+    background: linear-gradient(90deg,rgba(0, 123, 255, 1) 0%, rgba(0, 123, 255, 1) 30%, rgba(104,36,167,255) 95%, rgba(104,36,167,255) 100% ) !important;
     color: white !important;
     border-radius: 6px !important;
 }
@@ -315,7 +316,7 @@ body{
 .dropdown-menu{
     margin: 1px 5px 1px 15px !important;
     padding-left: 10px;
-    border-left: 6px solid #007bff !important;
+    border-left: 6px solid rgba(112,32,156,255) !important;
     border-radius: 8px !important;
 }
 
@@ -500,6 +501,10 @@ body{
     position: relative;
 }
 
+.card .card-menu-item{
+    margin-top: 2px;
+}
+
 .card .card-content {
     padding: 10px;    
 }
@@ -651,4 +656,42 @@ body{
 .box-shadow-style{
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0 rgba(60, 64, 67, 0.15) 0 1px 3px 1px !important;
     /*box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%) !important;*/
+}
+
+
+/* -- -- - - - - - - -- --- ---- -- --- --- -- -- -- -- */
+
+/* HOME SECTION */
+#MainBannerCarousel{
+    overflow: hidden !important;
+    border-radius: 15px !important;
+    border: 2px solid rgba(180, 180, 180, 0.3);
+}
+
+.carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px !important;
+    height: 150px !important;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    background: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(2px);
+}
+
+.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px !important;
+    height: 150px !important;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    background: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(2px);
 }

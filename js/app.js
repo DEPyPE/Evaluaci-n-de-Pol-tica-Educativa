@@ -7,6 +7,11 @@
         $('#headingOne').find('span').css('color', 'white');
     });
 
+$('.btn-collapsable-item-siie').on('click', function(){
+    // href="https://www.seg.guanajuato.gob.mx/SIIE/SitePages/SIIE.aspx" target="__blank"
+    window.open('https://www.seg.guanajuato.gob.mx/SIIE/SitePages/SIIE.aspx', '_blank');
+});
+
 //  Trigger for card-reveal PLANEA
 $('#ShowDocsEcea').on('click', function(){  
     $('.btn-info-ecea').fadeOut(100, function(){    
@@ -97,14 +102,24 @@ $('.card-reveal-planea .close').on('click', function(){
     $('#epe-inicio-tab').on('click', function(){
         console.log( $('#epe-inicio-page') );
     });
-    
-    $('.epe-menu-evaluacion-educativa').on('click', 'div a', function(){
-        $(this).addClass('.menu-evaluacion-educativa-active-item');
-        $(this).parent().siblings().find('.epe-nav-item').removeClass('.menu-evaluacion-educativa-active-item');
-    });
 
     $('.dropdown-menu-dlae').on('click', 'dropdown-item', function(){
         console.log( $(this) );
+    });
+
+    $('.dropdown-menu-practica-enseñanza').on('click', '.dropdown-item', function(){
+        var program = $(this).attr('name-program');
+
+        if( program =='info_depto' ){
+            $('#epe-evaluacion-practica-enseñanza-page').siblings().removeClass('active');
+            $('#epe-evaluacion-practica-enseñanza-page').siblings().removeClass('show');
+
+            $('#epe-evaluacion-practica-enseñanza-page').addClass('show');
+            $('#epe-evaluacion-practica-enseñanza-page').addClass('active');
+        }
+
+        console.log( 'Clicked => ', $(this).attr('name-program') );
+
     });
 
     $('.dropdown-menu-depype-TEST').on('click', '.dropdown-item', function(){
@@ -169,13 +184,13 @@ $('.card-reveal-planea .close').on('click', function(){
 
             $('#epe-logistica-exums').addClass('show');
             $('#epe-logistica-exums').addClass('active');
-        }else if( program == 'RIMA' ){
+        }/*else if( program == 'RIMA' ){
             $('#epe-logistica-rima').siblings().removeClass('active');
             $('#epe-logistica-rima').siblings().removeClass('show');
 
             $('#epe-logistica-rima').addClass('show');
             $('#epe-logistica-rima').addClass('active');
-        }
+        }*/
 
         console.log( 'Clicked => ', $(this).attr('name-program') );
 
