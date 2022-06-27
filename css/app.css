@@ -682,7 +682,7 @@ i.right {
 }
 
 .sitios-interes-container{
-    padding: 20px 5px !important;
+    padding: 20px 5px 15px 5px !important;
     margin: 0 !important;
     border: 2px solid rgba(180, 180, 180, 0.3);
     border-radius: 16px;
@@ -691,7 +691,7 @@ i.right {
 
 .title-sitios-interes{
     margin-left: 18px !important;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 600;
 }   
@@ -711,14 +711,59 @@ i.right {
 
 .list-enlaces-importantes .list-group-item{
     font-size: 14px !important;
-    padding: 8px 20px !important;
+    padding: 7px 15px !important;
     border-top: 0 !important;
     border-bottom: 0 !important;
 }
 
 .list-enlaces-importantes .list-group-item:hover{
     background-color: rgba(220, 220, 220, 0.8);
-    border-radius: 25px !important;
+    border-radius: 8px !important;
+}
+
+.documentos-importantes-container{
+    /*
+    border: 2px solid rgba(180, 180, 180, 0.3);
+    border-radius: 16px;
+    */
+    padding: 20px 15px;
+}
+
+.titulo-documentos-importantes{
+    margin-bottom: 30px;
+}
+
+.doc-interes-item{
+    border: 2px solid rgba(180, 180, 180, 0.3);
+    border-radius: 15px;
+    overflow: visible;
+    width: 100%;
+
+    margin-top: 40%;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+}
+
+.img-doc-interes{
+    width: 70%;
+    border-radius: 50%;
+    margin: -40% 0 20px 0;
+
+}
+
+.img-doc-interes-2{
+    border: 1px solid black !important;
+    border-style: dashed !important;
+}
+
+.btn-show-doc-interes{
+    background-color: #007bff;
+    width: 80%;
+    border-radius: 25px;
+    color: white !important;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center !important;
 }
 
 #MainBannerCarousel{
@@ -755,6 +800,3 @@ i.right {
     backdrop-filter: blur(2px);
 }
 
-.carousel-indicators{
-    
-}
