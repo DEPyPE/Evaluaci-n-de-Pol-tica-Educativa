@@ -107,6 +107,15 @@ $('.card-reveal-planea .close').on('click', function(){
         console.log( $(this) );
     });
 
+    $('.epe-inicio-tab-option').on('click', function(){
+        console.log('Inicio');
+        $('#epe-inicio-page').siblings().removeClass('active');
+        $('#epe-inicio-page').siblings().removeClass('show');
+
+        $('#epe-inicio-page').addClass('show');
+        $('#epe-inicio-page').addClass('active');        
+    });
+
     $('.dropdown-menu-practica-enseñanza').on('click', '.dropdown-item', function(){
         var program = $(this).attr('name-program');
 

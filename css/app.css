@@ -581,6 +581,10 @@ body{
     cursor: pointer !important;
 }
 
+.list-group-item{
+    color: black !important;
+}
+
 .list-group-talis, .list-group-docs-planea{
     margin: 0 !important;
 }
@@ -592,7 +596,7 @@ body{
     width: 60% !important;
     margin-left: 50% !important;
     transform: translateX(-55%);
-    padding: 10px 25px !important;
+    padding: 10px 20px 10px 20px !important;
 }
 
 .btn-reveal-docs-pisa, .btn-reveal-docs-talis,
@@ -662,6 +666,56 @@ body{
 /* -- -- - - - - - - -- --- ---- -- --- --- -- -- -- -- */
 
 /* HOME SECTION */
+
+.mt-0{
+    margin-top: 0 !important;
+}
+
+.pl-0{
+    padding-left: 0 !important;
+}
+
+.pr-0{
+    padding-right: 0 !important;
+}
+
+.sitios-interes-container{
+    padding: 15px 0px 0px 0px !important;
+    margin: 0 !important;
+    border: 2px solid rgba(180, 180, 180, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.title-sitios-interes{
+    margin-left: 18px !important;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}   
+
+.introduction-container{
+    padding: -30px 20px 0x 30px !important;
+}
+
+@media (min-width: 576px){
+    .jumbotron {
+        padding: 50px 30px !important;
+    }
+}
+.list-enlaces-importantes{
+    margin: 0 !important;
+}
+
+.list-enlaces-importantes .list-group-item{
+    font-size: 14px !important;
+    padding: 8px 20px !important;
+}
+
+.list-enlaces-importantes .list-group-item:hover{
+    background-color: rgba(245, 245, 245, 0.8);
+}
+
 #MainBannerCarousel{
     overflow: hidden !important;
     border-radius: 15px !important;
@@ -694,4 +748,8 @@ body{
     
     background: rgba(0, 0, 0, 0.2) !important;
     backdrop-filter: blur(2px);
+}
+
+.carousel-indicators{
+    
 }
