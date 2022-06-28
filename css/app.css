@@ -3,7 +3,6 @@ body{
 	background-color: rgb(240, 240, 240) !important;
 	/*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
     font-family: 'Baloo 2';
-    font-weight: bold;
 }
 
 .main-banner-dgpe{
@@ -707,6 +706,7 @@ i.right {
         padding: 50px 30px !important;
     }
 }
+
 .list-enlaces-importantes{
     margin: 0 !important;
 }
