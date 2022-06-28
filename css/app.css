@@ -723,6 +723,8 @@ i.right {
     border-radius: 8px !important;
 }
 
+/* ESTILOS PARA LOS DOCUMENTOS DE INTERÉS */
+
 .documentos-importantes-container{
     /*
     border: 2px solid rgba(180, 180, 180, 0.3);
@@ -731,25 +733,40 @@ i.right {
     padding: 20px 15px;
 }
 
-.titulo-documentos-importantes{
-    margin-bottom: 30px;
+.card-group-docs-interes{
+    margin-top: 10% !important;
 }
 
-.doc-interes-item{
-    border: 2px solid rgba(180, 180, 180, 0.3);
-    border-radius: 15px;
-    overflow: visible;
-    width: 100%;
-
-    margin-top: 40%;
-    padding: 0px 10px 30px 10px;
-    text-align: center;
+.card-doc-interes-item{
+    margin: 0 10px 0 10px !important;
+    border: 1px solid rgba(0, 0, 0, 0.125) !important;
+    border-radius: 16px !important;
+    padding: 50px 10px 10px 10px !important;
 }
 
-.img-doc-interes{
-    width: 70%;
-    border-radius: 50%;
-    margin: -40% 0 20px 0;
+.card-doc-interes-item:last-child{
+    margin: 0 0 0 10px !important;
+}
+
+.card-title-doc-interes{
+    font-size: 18px !important;
+    color: black !important;
+    text-align: center !important;
+}
+
+.card-img-doc-interes{
+    position: absolute;
+    width: 70% !important;
+    border-radius: 50% !important;
+    margin: -40% 0 20px 0 !important;
+    
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+.card-doc-interes-item .card-body{
+    padding: 20px 10px 20px 10px !important;
 }
 
 .text-doc-interes{
@@ -757,7 +774,7 @@ i.right {
     font-weight: bold;
 }
 
-.btn-show-doc-interes{
+.btn-link-doc-interes{
     position: absolute;
     bottom: -20px;
     left: 50%;
@@ -771,6 +788,8 @@ i.right {
     padding: 10px;
     text-align: center !important;
 }
+
+/* -- -- -- --- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 #MainBannerCarousel{
     overflow: hidden !important;
