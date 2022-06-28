@@ -1,7 +1,9 @@
 
 body{
 	background-color: rgb(240, 240, 240) !important;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	/*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    font-family: 'Baloo 2';
+    font-weight: bold;
 }
 
 .main-banner-dgpe{
@@ -740,7 +742,7 @@ i.right {
     width: 100%;
 
     margin-top: 40%;
-    padding: 0px 10px 10px 10px;
+    padding: 0px 10px 30px 10px;
     text-align: center;
 }
 
@@ -748,15 +750,19 @@ i.right {
     width: 70%;
     border-radius: 50%;
     margin: -40% 0 20px 0;
-
 }
 
-.img-doc-interes-2{
-    border: 1px solid black !important;
-    border-style: dashed !important;
+.text-doc-interes{
+    font-family: 'Baloo 2';
+    font-weight: bold;
 }
 
 .btn-show-doc-interes{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
     background-color: #007bff;
     width: 80%;
     border-radius: 25px;
