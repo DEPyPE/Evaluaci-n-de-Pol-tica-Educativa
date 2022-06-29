@@ -378,6 +378,10 @@ i.right {
     color: #2ea3f2;
 }
 
+.evaluaciones-internacionales-content-text{
+    text-align: justify !important;
+}
+
 .card-image-container-planea-basica, .card-image-container-planea-ms{
     padding: 25px 40px 30px 50px !important;
     width: 100% !important;
