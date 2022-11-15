@@ -304,14 +304,12 @@ body{
 
 i.left {
     float: left !important;
-    margin-right: 15px;
-    margin-top: -4px;
+    margin: 0 10px 0 5px;
 }
 
 i.right {
     float: right !important;
-    margin-left: 15px;
-    margin-top: -4px;
+    margin: 0 5px 0 10px;
 }
 
 /* SUBMENU PARA EL DEPyPE */
@@ -378,6 +376,10 @@ i.right {
 
 .card-title{
     color: #2ea3f2;
+}
+
+.evaluaciones-internacionales-content-text{
+    text-align: justify !important;
 }
 
 .card-image-container-planea-basica, .card-image-container-planea-ms{
@@ -726,15 +728,15 @@ i.right {
 /* ESTILOS PARA LOS DOCUMENTOS DE INTERÉS */
 
 .documentos-importantes-container{
-    /*
-    border: 2px solid rgba(180, 180, 180, 0.3);
-    border-radius: 16px;
-    */
     padding: 20px 15px;
 }
 
-.card-group-docs-interes{
+.group-docs-interes{
     margin-top: 10% !important;
+}
+
+.col-item-doc-interes{
+    padding: 0px 5px !important;
 }
 
 .card-doc-interes-item{
@@ -742,6 +744,7 @@ i.right {
     border: 1px solid rgba(0, 0, 0, 0.125) !important;
     border-radius: 16px !important;
     padding: 50px 10px 10px 10px !important;
+    height: 100% !important;
 }
 
 .card-doc-interes-item:last-child{
@@ -766,7 +769,7 @@ i.right {
 }
 
 .card-doc-interes-item .card-body{
-    padding: 20px 10px 20px 10px !important;
+    padding: 20px 5px !important;
 }
 
 .text-doc-interes{
@@ -781,11 +784,11 @@ i.right {
     transform: translateX(-50%);
     
     background-color: #007bff;
-    width: 80%;
+    width: auto;
     border-radius: 25px;
     color: white !important;
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 25px 10px 10px;
     text-align: center !important;
 }
 
@@ -825,3 +828,162 @@ i.right {
     backdrop-filter: blur(2px);
 }
 
+.break_word{
+    display: inline-block;
+}
+
+/* Extra Small devices (300px and up) 
+@media (min-width: 300px) {
+
+    .col-banner{
+        margin: 5px 5px !important;
+        padding: 0 5px 0 20px !important;
+    }
+
+    .title-page-evaluacion-educativa{
+        float: left !important;
+        font-size: 28px !important;
+        word-break:unset;
+        margin: 12px 0 16px 26px !important;
+        line-height: 30px !important;
+    }
+
+    .break_word{
+        display: block;
+    }
+
+    .img-banner{
+        top: 7px;
+        right: 0 !important;
+        width: 48% !important;
+        object-fit: cover !important;
+    }
+
+    .card-main-menu{
+        width: auto !important;
+        margin: 0 10px 10px 10px !important;
+        padding: 0 0 !important;
+    }
+
+    .col-pages{
+        width: 90% !important;
+        margin: 0 0 0 25px !important;
+        padding: 0 0 !important;
+    }
+
+    .col-banner-sitios{
+        padding: 0 !important;
+        width: 90% !important;
+        margin: 0 10px 0 27px !important;
+    }
+
+    #MainBannerCarousel{
+        margin-bottom: 15px !important;
+    }
+
+    .col-item-doc-interes{
+        
+    }
+
+    .col-item-doc-interes:nth-child(1){
+        margin-top: 25% !important;
+        margin-bottom: 25% !important;
+    }
+
+    .col-item-doc-interes:nth-child(2){
+        margin-top: 25% !important;
+        margin-bottom: 25% !important;
+    }
+    
+    .col-item-doc-interes:nth-child(3){
+        margin-top: 25% !important;
+        margin-bottom: 25% !important;
+    }
+
+    .col-item-doc-interes:nth-child(4){
+        margin-top: 25% !important;
+        margin-bottom: 25% !important;
+    }
+
+    .card-doc-interes-item{
+    }
+
+    .card-title-doc-interes{
+        font-size: 18px !important;
+        vertical-align: middle !important;
+    }
+
+    .card-img-doc-interes{
+        width: 60% !important;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .col-item-doc-interes:nth-child(1){
+        margin-top: 10% !important;
+    }
+
+    .col-item-doc-interes:nth-child(2){
+        margin-top: 10% !important;
+    }
+    
+    .col-item-doc-interes:nth-child(3){
+        margin-top: 25% !important;
+    }
+
+    .col-item-doc-interes:nth-child(4){
+        margin-top: 25% !important;
+    }
+
+    .card-doc-interes-item{
+        width: 80% !important;
+    }
+
+    .card-title-doc-interes{
+        font-size: 18px !important;
+        vertical-align: middle !important;
+    }
+
+    .card-img-doc-interes{
+        width: 60% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .col-item-doc-interes:nth-child(1){
+        margin-top: 5% !important;
+    }
+
+    .col-item-doc-interes:nth-child(2){
+        margin-top: 5% !important;
+    }
+    
+    .col-item-doc-interes:nth-child(3){
+        margin-top: 5% !important;
+    }
+
+    .col-item-doc-interes:nth-child(4){
+        margin-top: 20% !important;
+    }
+
+    .card-doc-interes-item{
+        width: 95% !important;
+    }
+
+    .card-title-doc-interes{
+        font-size: 16px !important;
+        vertical-align: middle !important;
+    }
+
+    .card-img-doc-interes{
+        width: 65% !important;
+    }
+}
+
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) { ... }
+
+*/
